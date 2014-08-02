@@ -12,5 +12,18 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require bootstrap
+//= require custom
+//= require jquery-1.10.2.min
+//= require jquery.appear
+//= require jquery.easing
+//= require jquery.fitvids
+//= require jquery.localscroll-1.2.7-min
+//= require jquery.scrollTo-1.4.3.1-min
+//= require jquery.validate.min
+//= require owl.carousel.min
+//= require page-loader
+//= require page-loader.min
+//= require waypoints.min
 //= require turbolinks
 //= require_tree .

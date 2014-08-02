@@ -11,5 +11,19 @@
  * file per style scope.
  *
  *= require_tree .
+ *= require animations
+ *= require bootstrap-theme
+ *= require bootstrap
+ *= require flaticon
+ *= require font-awesome
+ *= require owl.carousel
+ *= require owl.theme
+ *= require style
+ *= require colors/blue
+ *= require colors/green
+ *= require colors/orange
+ *= require colors/red
+ *= require colors/violet
+ *= require colors/yellow
  *= require_self
  */

@@ -186,7 +186,7 @@
 	}
 	
 	.nav-image {
-		background-image: url('../images/backgrounds/nav-bg.jpg');
+		background-image: url('./backgrounds/nav-bg.jpg');
 	}
 	
 	/* Logo
@@ -773,12 +773,6 @@
 		bottom: 0;
 		overflow: hidden;
 		z-index: 1;
-	}
-	
-	.blog-slide-photo img {
-		position: absolute;
-		top: 0;
-		left: 0;
 	}
 	
 	.blog-slide-content {
