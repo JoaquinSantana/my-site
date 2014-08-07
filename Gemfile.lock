@@ -47,11 +47,7 @@ GEM
     coffee-script-source (1.7.1)
     database_cleaner (1.0.1)
     diff-lcs (1.2.5)
-<<<<<<< HEAD
     docile (1.1.5)
-=======
-    docile (1.1.3)
->>>>>>> 4d7af85a1739781450b77513499c0e383203d806
     erubis (2.7.0)
     execjs (2.2.1)
     factory_girl (4.2.0)
@@ -137,11 +133,7 @@ GEM
       multi_json (~> 1.0)
       rubyzip (~> 1.0)
       websocket (~> 1.0.4)
-<<<<<<< HEAD
     simplecov (0.9.0)
-=======
-    simplecov (0.8.2)
->>>>>>> 4d7af85a1739781450b77513499c0e383203d806
       docile (~> 1.1.0)
       multi_json
       simplecov-html (~> 0.8.0)
