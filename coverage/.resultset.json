@@ -1,7 +1,11 @@
 {
   "RSpec": {
     "coverage": {
+<<<<<<< HEAD
       "/home/pnc/sites/moja_strona/app/controllers/homes_controller.rb": [
+=======
+      "/home/pnc/sites/my-site/app/controllers/homes_controller.rb": [
+>>>>>>> 4d7af85a1739781450b77513499c0e383203d806
         1,
         null,
         1,
@@ -9,7 +13,11 @@
         null,
         null
       ],
+<<<<<<< HEAD
       "/home/pnc/sites/moja_strona/app/controllers/application_controller.rb": [
+=======
+      "/home/pnc/sites/my-site/app/controllers/application_controller.rb": [
+>>>>>>> 4d7af85a1739781450b77513499c0e383203d806
         1,
         null,
         null,
@@ -17,6 +25,10 @@
         null
       ]
     },
+<<<<<<< HEAD
     "timestamp": 1407341164
+=======
+    "timestamp": 1407394223
+>>>>>>> 4d7af85a1739781450b77513499c0e383203d806
   }
 }
