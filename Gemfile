@@ -11,8 +11,20 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
+gem 'simplecov', :require => false, :group => :test
+
 group :development do
   gem 'sqlite3', '1.3.8'
+  gem 'rspec-rails', '~> 2.14.0'
+  gem "factory_girl_rails", "~> 4.2.1"
+end
+
+group :test do
+  gem "faker", "~> 1.1.2"
+  gem "capybara", "~> 2.1.0"
+  gem "database_cleaner", "~> 1.0.1"
+  gem "launchy", "~> 2.3.0"
+  gem "selenium-webdriver", "~> 2.39.0"
 end
 
 group :production do
@@ -21,3 +33,5 @@ group :production do
 end
 
 gem 'spring',        group: :development
+
+
