@@ -25,11 +25,36 @@
         null,
         null
       ],
+      "/home/tpanek/sites/my-site/spec/features/viewing_post_spec.rb": [
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null
+      ],
+      "/home/tpanek/sites/my-site/app/models/post.rb": [
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
       "/home/tpanek/sites/my-site/app/controllers/homes_controller.rb": [
         1,
         null,
         1,
-        4,
+        5,
         null,
         null
       ],
@@ -38,13 +63,6 @@
         null,
         null,
         1,
-        null
-      ],
-      "/home/tpanek/sites/my-site/app/models/post.rb": [
-        1,
-        1,
-        1,
-        null,
         null
       ],
       "/home/tpanek/sites/my-site/app/controllers/posts_controller.rb": [
@@ -111,7 +129,7 @@
         1,
         null,
         1,
-        1,
+        2,
         null,
         null,
         null,
@@ -121,6 +139,6 @@
         null
       ]
     },
-    "timestamp": 1408018689
+    "timestamp": 1408020070
   }
 }
