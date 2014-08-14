@@ -1,11 +1,35 @@
 {
   "RSpec": {
     "coverage": {
+      "/home/tpanek/sites/my-site/spec/features/landing_page_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        2,
+        null,
+        null,
+        1,
+        1,
+        null,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
       "/home/tpanek/sites/my-site/app/controllers/homes_controller.rb": [
         1,
         null,
         1,
-        2,
+        4,
         null,
         null
       ],
@@ -97,6 +121,6 @@
         null
       ]
     },
-    "timestamp": 1408008627
+    "timestamp": 1408018689
   }
 }
