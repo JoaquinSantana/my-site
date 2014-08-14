@@ -2,7 +2,7 @@ require 'spec_helper'
 
 feature 'Landing page' do
   before :each do 
-    post = FactoryGirl.create(:post)
+    @post = FactoryGirl.create(:post)
   end
 
   scenario 'not registered user' do
@@ -14,8 +14,9 @@ feature 'Landing page' do
   scenario 'visit blog post' do
     visit root_path
     within("#blog") do
-      expect(page).to have_content(post.title)
-      expect(page).to have_content(post.created_at)  
+      expect(page).to have_content(@post.title)
+      expect(page).to have_content(@post.body)
+      expect(page).to have_content(@post.created_at)  
     end
   end
 end

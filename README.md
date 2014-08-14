@@ -11,5 +11,5 @@ Specyfikacja:
 
 * pg
 
-* SCSS
+* SASS
 
