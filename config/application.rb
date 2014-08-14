@@ -32,5 +32,6 @@ module MojaStrona
     
     config.assets.paths << Rails.root.join("app", "assets", "fonts")
     config.assets.paths << Rails.root.join("app", "assets", "images")
+    config.assets.precompile += %w(*.png, *.jpg, *.jpeg, *.gif)
   end
 end

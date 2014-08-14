@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
 
 <!-- Title -->
@@ -25,13 +25,13 @@
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 
-<!-- Retina Images -->
+<!-- Retina Images-->
 <script>if((window.devicePixelRatio===undefined?1:window.devicePixelRatio)>1)
     document.cookie='HTTP_IS_RETINA=1;path=/';</script>
 <!-- End Retina Images -->
 
-<!-- Google Web Fonts -->
-<link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,600,700,500' rel='stylesheet' type='text/css'>
+<!--  Google Web Fonts -->
+<link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,600,700,500' rel='stylesheet' type='text/css'> 
 
 
 
@@ -39,7 +39,7 @@
 
 <body>
 
-<!-- Facebook Source -->
+<!--  Facebook Source  -->
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -53,15 +53,11 @@
 <!-- <div id="page-loader">	</div> -->
 <!-- Loader / End -->
 
-<!-- Header - Left Navbar  -->
 <%= render 'layouts/header' %>
-<!-- Header / End -->
 
-<!-- Page Content -->
 <%= render 'layouts/flashes' %>
-<%= yield %>
-<!-- Page Content / End -->
 
+<%= yield %>
 
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
 

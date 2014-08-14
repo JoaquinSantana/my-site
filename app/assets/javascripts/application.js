@@ -22,8 +22,6 @@
 //= require jquery.scrollTo-1.4.3.1-min
 //= require jquery.validate.min
 //= require owl.carousel.min
-//= require page-loader
 //= require page-loader.min
 //= require waypoints.min
-//= require turbolinks
 //= require_tree .

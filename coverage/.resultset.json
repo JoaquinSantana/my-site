@@ -1,29 +1,29 @@
 {
   "RSpec": {
     "coverage": {
-      "/home/pnc/sites/moja_strona/app/controllers/homes_controller.rb": [
+      "/home/tpanek/sites/my-site/app/controllers/homes_controller.rb": [
         1,
         null,
+        1,
+        2,
+        null,
+        null
+      ],
+      "/home/tpanek/sites/my-site/app/controllers/application_controller.rb": [
+        1,
+        null,
+        null,
+        1,
+        null
+      ],
+      "/home/tpanek/sites/my-site/app/models/post.rb": [
+        1,
         1,
         1,
         null,
         null
       ],
-      "/home/pnc/sites/moja_strona/app/controllers/application_controller.rb": [
-        1,
-        null,
-        null,
-        1,
-        null
-      ],
-      "/home/pnc/sites/moja_strona/app/models/post.rb": [
-        1,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/home/pnc/sites/moja_strona/app/controllers/posts_controller.rb": [
+      "/home/tpanek/sites/my-site/app/controllers/posts_controller.rb": [
         1,
         1,
         null,
@@ -40,7 +40,7 @@
         null,
         null,
         1,
-        1,
+        2,
         null,
         null,
         null,
@@ -50,11 +50,11 @@
         null,
         null,
         1,
-        1,
+        2,
         null,
+        2,
         1,
-        0,
-        0,
+        1,
         null,
         1,
         null,
@@ -87,16 +87,16 @@
         1,
         null,
         1,
-        0,
+        1,
         null,
         null,
         null,
         1,
-        1,
+        2,
         null,
         null
       ]
     },
-    "timestamp": 1407584829
+    "timestamp": 1408008627
   }
 }

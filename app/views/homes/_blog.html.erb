@@ -8,7 +8,7 @@
             
           <!-- Post Carousel --> 
           <div class="post-carousel animated slide-in-top">
-          <%= link_to "Nowy post", new_post_path %>
+      
             <!-- Pojedyńczy Post -->
             <% @posts.each do |post| %>
               <article class="post post-carousel-item">
@@ -25,19 +25,21 @@
                           <div class="post-text">
                               <h3><a href="single-post.html"><%= post.title %></a></h3>
                               <p class="lead"><%= post.body %></p>
-                              <%= link_to "Czytaj więcej", post_path(post), class: "btn btn-primary btn-sm" %>
+                              <%= link_to "Czytaj więcej", post_path(post), class: "btn btn-primary btn-sm" %>                      
                           </div>
                       </div>
                   </div>
               </article>
             <% end %>
+          </div>
           <!-- End Of Section -->
           <div class="end-of-section">
       
             <!-- Left Caption -->
             <div class="pull-left">
               <span class="hiddend-sm hidden-xs">Would you like to check all of my posts? &nbsp; &nbsp;</span><a href="blog-page.html" class="btn btn-black btn-sm">Check my Blog Page!</a>
-            </div>
+              <%= link_to "Nowy post", new_post_path, class: "btn btn-black btn-sm" %>
+            </div></br>   
              
             <!-- Post Carousel Navigation -->  
             <div class="post-carousel-control">
@@ -45,10 +47,8 @@
               <a class="post-carousel-next" href="#">Next</a>
             </div>
           
-          </div>
+          </div><!-- /End of section -->
             
-        </div>
-      
       </div>
         
     </div>
