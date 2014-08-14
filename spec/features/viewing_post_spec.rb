@@ -1,7 +1,5 @@
 require 'spec_helper'
 
-
-
 feature "show post page" do
 	scenario 'not registered users visit post' do
 		post = FactoryGirl.create(:post)
