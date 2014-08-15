@@ -1,7 +1,14 @@
-@import 'owl.theme.css';
-@import 'owl.carousel.css';
 @import 'animations.css';
-@import 'style.css';
-@import 'bootstrap.css';
 @import 'bootstrap-theme.css';
+@import 'bootstrap.css';
+@import 'owl.carousel.css';
+@import 'owl.theme.css';
+@import 'style.css';
+@import 'colors/yellow.css';
 
+.btn-primary:hover,
+.btn-primary:focus,
+.contact-form-trigger:hover,
+#contact-form-holder { 
+  background-color: #e6b623;
+}

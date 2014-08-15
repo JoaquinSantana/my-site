@@ -16,9 +16,8 @@
  * require colors/violet
  *
  *= require_tree .
- *= require moje
  *= require flaticon
  *= require font-awesome
- *= require colors/yellow
+ *= require moje
  *= require_self
  */
