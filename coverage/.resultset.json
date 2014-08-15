@@ -1,6 +1,23 @@
 {
   "RSpec": {
     "coverage": {
+      "/home/pnc/sites/moja_strona/spec/features/deleting_post_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null
+      ],
       "/home/pnc/sites/moja_strona/spec/features/landing_page_spec.rb": [
         1,
         null,
@@ -94,7 +111,7 @@
         1,
         null,
         1,
-        7,
+        9,
         null,
         null
       ],
@@ -156,17 +173,15 @@
         null,
         null,
         1,
-        0,
-        0,
-        0,
-        0,
-        null,
+        1,
+        1,
+        1,
         null,
         null,
         1,
         null,
         1,
-        7,
+        8,
         null,
         null,
         null,
@@ -176,6 +191,6 @@
         null
       ]
     },
-    "timestamp": 1408112767
+    "timestamp": 1408114097
   }
 }
