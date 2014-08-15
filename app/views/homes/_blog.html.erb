@@ -25,7 +25,8 @@
                           <div class="post-text">
                               <h3><a href="single-post.html"><%= post.title %></a></h3>
                               <p class="lead"><%= post.body %></p>
-                              <%= link_to "Czytaj więcej", post_path(post), class: "btn btn-primary btn-sm" %>                      
+                              <%= link_to "Czytaj więcej", post_path(post), class: "btn btn-primary btn-sm" %>
+                              <%= link_to "Edytuj", edit_post_path(post), class: "btn btn-primary btn-sm" %>                       
                           </div>
                       </div>
                   </div>

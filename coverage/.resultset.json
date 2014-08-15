@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/home/tpanek/sites/my-site/spec/features/landing_page_spec.rb": [
+      "/home/pnc/sites/moja_strona/spec/features/landing_page_spec.rb": [
         1,
         null,
         1,
@@ -25,10 +25,50 @@
         null,
         null
       ],
-      "/home/tpanek/sites/my-site/spec/features/viewing_post_spec.rb": [
+      "/home/pnc/sites/moja_strona/spec/features/updating_post_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
         1,
         null,
         null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/home/pnc/sites/moja_strona/spec/features/viewing_post_spec.rb": [
+        1,
         null,
         1,
         1,
@@ -43,29 +83,29 @@
         null,
         null
       ],
-      "/home/tpanek/sites/my-site/app/models/post.rb": [
+      "/home/pnc/sites/moja_strona/app/models/post.rb": [
         1,
         1,
         1,
         null,
         null
       ],
-      "/home/tpanek/sites/my-site/app/controllers/homes_controller.rb": [
+      "/home/pnc/sites/moja_strona/app/controllers/homes_controller.rb": [
         1,
         null,
         1,
-        5,
+        7,
         null,
         null
       ],
-      "/home/tpanek/sites/my-site/app/controllers/application_controller.rb": [
+      "/home/pnc/sites/moja_strona/app/controllers/application_controller.rb": [
         1,
         null,
         null,
         1,
         null
       ],
-      "/home/tpanek/sites/my-site/app/controllers/posts_controller.rb": [
+      "/home/pnc/sites/moja_strona/app/controllers/posts_controller.rb": [
         1,
         1,
         null,
@@ -105,40 +145,37 @@
         null,
         null,
         1,
-        0,
-        0,
-        0,
-        0,
-        null,
-        0,
-        0,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1,
-        0,
-        0,
-        0,
-        0,
-        null,
-        null,
-        null,
-        1,
-        null,
-        1,
         2,
+        1,
+        1,
+        null,
+        1,
+        null,
+        null,
         null,
         null,
         null,
         1,
-        2,
+        0,
+        0,
+        0,
+        0,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        7,
+        null,
+        null,
+        null,
+        1,
+        4,
         null,
         null
       ]
     },
-    "timestamp": 1408020070
+    "timestamp": 1408112767
   }
 }
