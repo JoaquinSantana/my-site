@@ -12,7 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require bootstrap
+//= require bootstrap-sprockets
 //= require custom
 //= require jquery-1.10.2.min
 //= require jquery.appear

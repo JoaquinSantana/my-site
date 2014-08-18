@@ -1,8 +1,26 @@
 @import 'animations.css';
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
 @import 'bootstrap-theme.css';
-@import 'bootstrap.css';
 @import 'owl.carousel.css';
 @import 'owl.theme.css';
 @import 'style.css';
 @import 'colors/yellow.css';
 
+$yellow: #F8D25F;
+$yellow_hover: #E6B623;
+
+.text-primary {
+  color: $yellow;
+}
+
+.btn.btn-primary {
+  background-color: $yellow;
+  &:hover {
+    background-color: $yellow_hover;
+  }
+}
+
+a:hover {
+  color: $yellow;
+}
