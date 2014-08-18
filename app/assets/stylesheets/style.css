@@ -7,7 +7,9 @@
 /* ----------------------------------------------------------------------------- */
 /* --- DOCUMENT SETUP
 /* ----------------------------------------------------------------------------- */
-
+/* @import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&subset=latin,latin-ext); */
+@import url(http://fonts.googleapis.com/css?family=Merriweather&subset=latin,latin-ext);
+/* @import url(http://fonts.googleapis.com/css?family=Dosis:200&subset=latin,latin-ext); */
 	html {
 		overflow-x: hidden;
 	}
@@ -15,8 +17,11 @@
     body {
 		color: #282828;
 		overflow-x: hidden; 
-		font-size: 12px;
-		font-family: "Helvetica Neue",'Raleway',Helvetica,Arial,sans-serif;
+		font-size: 10px;
+		/* font-family: 'Open Sans Condensed', sans-serif; */
+		 font-family: 'Merriweather', serif;
+		/* font-family: 'Dosis', sans-serif; 
+		/* font-family: "Helvetica Neue",'Raleway',Helvetica,Arial,sans-serif; */
 	}
 	
 	.clear { display:block;visibility:hidden;clear:both;overflow:hidden;width:0;height:0; }
