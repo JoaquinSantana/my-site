@@ -2,4 +2,10 @@ class Post < ActiveRecord::Base
   validates :title, presence: { message: "Pole tytuł nie może być puste" }
   validates :body, presence: { message: "Pole body nie może być puste" }
 
+  default_scope { order('created_at DESC') }
+
+
+  def self.created_at
+    self.created_at.strftime("%b %d, %Y") 
+  end
 end

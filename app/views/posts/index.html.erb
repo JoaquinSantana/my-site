@@ -1,23 +1,79 @@
-<h1>Listing posts</h1>
+<!-- Page Content -->
+<div id="page-content">
 
-<table>
-  <thead>
-    <tr>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+  <!-- Blog Slider -->
+  <div class="blog-slider-holder">
+    
+      <!-- Top Bar -->
+      <div class="top-bar blog-slider-top-bar">
+        <!-- Go Back -->
+        <div class="pull-left">
+            <%= link_to root_url, class: 'btn btn-default btn-pull-up' do %>
+              <i class="icon-before fa fa-chevron-left">  Strona główna</i>
+            <% end %>
+        </div>
+        <!-- Heading -->
+        <div class="pull-right">
+            <h6>Tomasz Panek - Blog</h6>
+        </div>
+      </div>
+          
+      <div class="blog-slider">
 
-  <tbody>
-    <% @posts.each do |post| %>
-      <tr>
-        <td><%= link_to 'Show', post %></td>
-        <td><%= link_to 'Edit', edit_post_path(post) %></td>
-        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Post', new_post_path %>
+        <% @post_last.each do |p| %>
+          <!-- Single Slide -->
+          <article class="blog-slide content padded">
+            <div class="blog-slide-photo editable-alpha" data-alpha="10"><img src="images/blog/post-big_01.jpg" alt="" /></div>
+            <div class="blog-slide-content padded-vertical">
+              <span class="post-date-alt"><%= p.created_at.strftime("%b %d, %Y")  %></span>
+              <h1 class="medium"><a href="single-post-clean.html"><%= p.title %></a></h1>
+              <%= link_to "Czytaj więcej", post_path(p), class: 'btn btn-primary' %>
+            </div>
+          </article>
+        <% end %>
+      </div>
+          
+    </div>
+    
+    <!-- Page Content -->
+    <div class="content padded">
+      <div class="row">
+        <% @posts.each do |post| %>
+          <!-- Single post --> 
+          <article class="post col-md-6">
+              <div class="post-image"><img src="images/blog/post_01.jpg" alt="" /></div>
+                <div class="post-content-holder">
+                    <div class="post-content">
+                        <div class="post-info clearfix">
+                            <span class="post-date"><%= post.created_at.strftime("%b %d, %Y")  %></span>
+                            <div class="post-meta">
+                                <span><i class="fa fa-comment"></i><a href="#">4 comments</a></span>
+                                <span><i class="fa fa-tag"></i><a href="#">Webdesign</a></span>
+                            </div>
+                        </div>
+                        <div class="post-text">
+                            <h3><a href="single-post-clean.html"><%= post.title %></a></h3>
+                            <p class="lead">Per sint eirmod expetenda te. Pro ne essent.</p>
+                            <p>Per ea tibique fabellas electram. Ea aliquam corpora vis. Ne quot civibus atomorum quo. </p>
+                            <%= link_to "Czytaj więcej", post_path(post), class: 'btn btn-primary btn-sm' %>
+                        </div>
+                    </div>
+                </div>
+          </article>
+        <% end %>
+      </div>
+      
+      <!-- Bottom Bar -->
+      <div class="bottom-bar">
+      
+          <!-- Contact List -->
+          <ul class="list-inline">
+            <li><i class="inline-icon icon-before-and-after text-primary fa fa-comment"></i><a href="#">tomekkpanek@gmail.com</a></li>
+          </ul>
+       
+      </div>
+        
+    </div>
+  
+</div>
+<!-- Page Content / End -->

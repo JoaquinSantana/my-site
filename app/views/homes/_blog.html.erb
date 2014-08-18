@@ -16,7 +16,7 @@
                   <div class="post-content-holder">
                       <div class="post-content">
                           <div class="post-info clearfix">
-                              <span class="post-date"><%= post.created_at %></span>
+                              <span class="post-date"><%= post.created_at.strftime("%b %d, %Y")  %></span>
                               <div class="post-meta">
                                   <span><i class="fa fa-comment"></i><a href="#">4 comments</a></span>
                                   <span><i class="fa fa-tag"></i><a href="#">Webdesign</a></span>
@@ -40,7 +40,8 @@
       
             <!-- Left Caption -->
             <div class="pull-left">
-              <span class="hiddend-sm hidden-xs">Chcesz zobaczyć wszystkie wpisy? &nbsp; &nbsp;</span><a href="blog-page.html" class="btn btn-black btn-sm">Sprawdź mój blog!</a>
+              <span class="hiddend-sm hidden-xs">Chcesz zobaczyć wszystkie wpisy? &nbsp; &nbsp;</span>
+              <%= link_to "Sprawdź mój blog!", posts_path, class: 'btn btn-black btn-sm'%>
               <%= link_to "Nowy post", new_post_path, class: "btn btn-black btn-sm" %>
             </div></br>   
              
