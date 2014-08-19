@@ -1,0 +1,14 @@
+pl:
+  devise:
+    sessions:
+      user:
+        signed_in: 'Zalogowałeś się na blogu'
+    failure:
+      already_authenticated: "Jesteś już zalogowany"
+      invalid: "Pole login/hasło nie może być puste"
+      locked: "Your account is locked."
+      last_attempt: "You have one more attempt before your account will be locked."
+      not_found_in_database: "Invalid email or password."
+      timeout: "Your session expired. Please sign in again to continue."
+      unauthenticated: "You need to sign in or sign up before continuing."
+      unconfirmed: "You have to confirm your account before continuing."    
