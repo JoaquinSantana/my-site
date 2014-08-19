@@ -20,7 +20,9 @@
             <!-- URL -->
             <div class="pull-right">
               <a href="#" class="hidden-xs">www.tpanek.pl</a>
-              <%= link_to "Zaloguj", new_user_session_path %>
+              <% unless user_signed_in? %>
+                <%= link_to "Zaloguj", new_user_session_path %>
+              <% end %>
             </div>
             
         </div>

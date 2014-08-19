@@ -1,6 +1,11 @@
 require 'spec_helper'
 
 feature 'create post' do 
+  before(:each) do
+    @user = FactoryGirl.create(:user)
+    sign_in(@user)
+  end
+
   scenario 'with valid data' do
     visit root_path
 
