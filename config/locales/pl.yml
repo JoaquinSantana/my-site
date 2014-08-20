@@ -12,4 +12,10 @@ pl:
       not_found_in_database: "Nieprawidłowy email lub hasło"
       timeout: "Your session expired. Please sign in again to continue."
       unauthenticated: "Brak dostępu"
-      unconfirmed: "You have to confirm your account before continuing."    
+      unconfirmed: "You have to confirm your account before continuing."
+    passwords:
+      no_token: "You can't access this page without coming from a password reset email. If you do come from a password reset email, please make sure you used the full URL provided."
+      send_instructions: "W najbliższym czasie otrzymasz instrukcję jak zmienić hasło"
+      send_paranoid_instructions: "If your email address exists in our database, you will receive a password recovery link at your email address in a few minutes."
+      updated: "Your password was changed successfully. You are now signed in."
+      updated_not_active: "Your password was changed successfully."    
