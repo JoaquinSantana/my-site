@@ -16,7 +16,6 @@ feature 'Landing page' do
     within("#blog") do
       expect(page).to have_content(@post.title)
       expect(page).to have_content(@post.body)
-      expect(page).to have_content(@post.created_at.strftime("%b %d, %Y") )  
     end
   end
 end
