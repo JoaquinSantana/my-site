@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-feature 'create post' do 
+feature 'login user can create post' do 
   before(:each) do
     @user = FactoryGirl.create(:user)
     sign_in(@user)
@@ -27,5 +27,13 @@ feature 'create post' do
 
     expect(page).to have_content("Pole tytuł nie może być puste")
     expect(page).to have_content("Pole body nie może być puste")
+  end
+end
+
+feature 'non login user' do
+  scenario 'cant create post' do
+    visit root_path
+
+    expect(page).to_not have_content("Nowy post")
   end
 end

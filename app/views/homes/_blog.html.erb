@@ -42,7 +42,9 @@
             <div class="pull-left">
               <span class="hiddend-sm hidden-xs">Chcesz zobaczyć wszystkie wpisy? &nbsp; &nbsp;</span>
               <%= link_to "Sprawdź mój blog!", posts_path, class: 'btn btn-black btn-sm'%>
-              <%= link_to "Nowy post", new_post_path, class: "btn btn-black btn-sm" %>
+              <% if user_signed_in? %>
+                <%= link_to "Nowy post", new_post_path, class: "btn btn-black btn-sm" %>
+              <% end %>
             </div></br>   
              
             <!-- Post Carousel Navigation -->  

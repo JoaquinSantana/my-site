@@ -20,7 +20,10 @@
             <!-- URL -->
             <div class="pull-right">
               <a href="#" class="hidden-xs">www.tpanek.pl</a>
-              <% unless user_signed_in? %>
+
+              <% if user_signed_in? %>
+                <%= link_to "Wyloguj", destroy_user_session_path, method: :delete %>
+              <% else %>
                 <%= link_to "Zaloguj", new_user_session_path %>
               <% end %>
             </div>

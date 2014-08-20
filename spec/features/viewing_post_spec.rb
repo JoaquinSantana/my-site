@@ -6,7 +6,7 @@ feature "show post page" do
 
 		visit root_path
 		within ('#blog') do
-			click_link "Czytaj więcej"
+			click_link("Czytaj więcej", :match => :first)
 		end
 
 		expect(page).to have_content(post.title)

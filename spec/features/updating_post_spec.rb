@@ -1,40 +1,45 @@
 require 'spec_helper'
 
-feature 'updating post' do 
-  scenario 'update with valid data' do
-    post = FactoryGirl.create(:post)
-
-    visit root_path
-    within ('#blog') do
-      click_link "Edytuj"
+feature 'owner of site can updating post' do 
+    
+    before(:each) do
+      @user = FactoryGirl.create(:user)
+      sign_in(@user)
     end
 
-    expect(page).to have_content("Edycja postu")
+    scenario 'update with valid data' do
+      visit root_path
 
-    fill_in('Title', with: 'nowy tytul')
-    fill_in('Body', with: 'nowa zawartosc postu')
+      within ('#blog') do
+        click_link("Edytuj", :match => :first)
+      end
 
-    click_button ("Zapisz")
+      expect(page).to have_content("Edycja postu")
 
-    expect(page).to have_content("Post został zaaktualizowany")
-  end
+      fill_in('Title', with: 'nowy tytul')
+      fill_in('Body', with: 'nowa zawartosc postu')
 
-  scenario "can't update post with invalid data" do
-    post = FactoryGirl.create(:post)
-    visit root_path
-    within ('#blog') do
-      click_link "Edytuj"
+      click_button ("Zapisz")
+
+      expect(page).to have_content("Post został zaaktualizowany")
     end
 
-    expect(page).to have_content("Edycja postu")
+    scenario "can't update post with invalid data" do
+      post = FactoryGirl.create(:post)
+      visit root_path
+      within ('#blog') do
+        click_link("Edytuj", :match => :first)
+      end
 
-    fill_in('Title', with: '')
-    fill_in('Body', with: '')
+      expect(page).to have_content("Edycja postu")
 
-    click_button ("Zapisz")
+      fill_in('Title', with: '')
+      fill_in('Body', with: '')
 
-    expect(page).to have_content("Pole tytuł nie może być puste")
-    expect(page).to have_content("Pole body nie może być puste")
-    expect(page.current_url).to eq(post_url(post))
-  end
+      click_button ("Zapisz")
+
+      expect(page).to have_content("Pole tytuł nie może być puste")
+      expect(page).to have_content("Pole body nie może być puste")
+      expect(page.current_url).to eq(post_url(post))
+    end
 end
