@@ -3,6 +3,7 @@ pl:
     sessions:
       user:
         signed_in: 'Zalogowałeś się na blogu'
+        signed_out: 'Zostałeś wylogowany'
     failure:
       already_authenticated: "Jesteś już zalogowany"
       invalid: "Pole login/hasło nie może być puste"
