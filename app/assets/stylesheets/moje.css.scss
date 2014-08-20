@@ -28,3 +28,10 @@ a:hover {
 #profile {
   font-family: "Helvetica Neue",'Raleway',Helvetica,Arial,sans-serif;
 }
+
+label.checkbox {
+	margin-bottom: 7px !important;
+	input[type="radio"], input[type="checkbox"] {
+		margin-top: 0px;
+	}
+}

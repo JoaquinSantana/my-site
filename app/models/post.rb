@@ -4,8 +4,4 @@ class Post < ActiveRecord::Base
 
   default_scope { order('created_at DESC') }
 
-
-  def self.created_at
-    self.created_at.strftime("%b %d, %Y") 
-  end
 end
