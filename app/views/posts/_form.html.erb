@@ -25,7 +25,7 @@
               <% end %></br>
             </div>
 
-            <%= f.input :body, :as => :ckeditor, :input_html => { :ckeditor => {:toolbar => 'Full'} }, label: false %></br>
+            <%= f.input :body, :as => :ckeditor, :input_html => { :ckeditor => {:toolbar => 'Full'} }, label: false, placeholder: 'Zawartość postu' %></br>
           </div>
             <div class="form-actions">
               <%= f.button :submit, "Zapisz", class: 'btn btn-black btn-block btn-sm' %>

@@ -1,32 +1,36 @@
 require 'spec_helper'
 
-feature 'login user can create post' do 
+feature 'login user' do 
   before(:each) do
     @user = FactoryGirl.create(:user)
+    @post = FactoryGirl.create(:post)
     sign_in(@user)
   end
 
-  scenario 'with valid data' do
+  scenario 'can create post with valid data' do
     visit root_path
 
     click_link "Nowy post"
-    fill_in("Title", with: "Pierwszy Post")
-    fill_in("Body", with: "To jest moj pierwszy post")
+    fill_in("Tytuł postu", with: @post.title)
+    fill_in("Krótki opis", with: @post.description)
+    fill_in("Zawartość postu", with: @post.body)
     click_button "Zapisz"
 
     expect(page).to have_content("Post został utworzony")
   end
 
-  scenario 'with invalid data' do
+  scenario 'cant create post with invalid data' do
     visit root_path
 
     click_link "Nowy post"
-    fill_in("Title", with: "")
-    fill_in("Body", with: "")
+    fill_in("Tytuł postu", with: "")
+    fill_in("Krótki opis", with: "")
+    fill_in("Zawartość postu", with: "")
     click_button "Zapisz"
 
     expect(page).to have_content("Pole tytuł nie może być puste")
     expect(page).to have_content("Pole body nie może być puste")
+    expect(page).to have_content("Pole opisu nie może być puste")
   end
 end
 

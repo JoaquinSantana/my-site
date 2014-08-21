@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe PostsController do
-	let(:valid_attributes) { { title: "Tytul", body: "To jest zawartość postu" } }
+	let(:valid_attributes) { { title: "Tytul", description: "To jest krótki opis", body: "To jest zawartość postu" } }
 	let(:valid_session) { {} }
 
 	context "non login user" do

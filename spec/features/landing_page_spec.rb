@@ -15,7 +15,7 @@ feature 'Landing page' do
     visit root_path
     within("#blog") do
       expect(page).to have_content(@post.title)
-      expect(page).to have_content(@post.body)
+      expect(page).to have_content(@post.description)
     end
   end
 end

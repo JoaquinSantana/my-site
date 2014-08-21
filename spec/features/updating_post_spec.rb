@@ -1,13 +1,14 @@
 require 'spec_helper'
 
-feature 'owner of site can updating post' do 
+feature 'owner of site' do 
     
     before(:each) do
       @user = FactoryGirl.create(:user)
+      post = FactoryGirl.create(:post)
       sign_in(@user)
     end
 
-    scenario 'update with valid data' do
+    scenario 'can with valid data' do
       visit root_path
 
       within ('#blog') do
@@ -16,8 +17,9 @@ feature 'owner of site can updating post' do
 
       expect(page).to have_content("Edycja postu")
 
-      fill_in('Title', with: 'nowy tytul')
-      fill_in('Body', with: 'nowa zawartosc postu')
+      fill_in('Tytuł postu', with: 'nowy tytul')
+      fill_in('Krótki opis', with: 'nowy opis')
+      fill_in('Zawartość postu', with: 'nowa zawartosc postu')
 
       click_button ("Zapisz")
 
@@ -33,13 +35,15 @@ feature 'owner of site can updating post' do
 
       expect(page).to have_content("Edycja postu")
 
-      fill_in('Title', with: '')
-      fill_in('Body', with: '')
+      fill_in('Tytuł postu', with: '')
+      fill_in('Krótki opis', with: '')
+      fill_in('Zawartość postu', with: '')
 
       click_button ("Zapisz")
 
       expect(page).to have_content("Pole tytuł nie może być puste")
       expect(page).to have_content("Pole body nie może być puste")
+      expect(page).to have_content("Pole opisu nie może być puste")
       expect(page.current_url).to eq(post_url(post))
     end
 end
