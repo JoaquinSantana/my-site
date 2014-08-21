@@ -19,12 +19,15 @@
             
             <!-- URL -->
             <div class="pull-right">
-              <a href="#" class="hidden-xs">www.tpanek.pl</a>
 
               <% if user_signed_in? %>
-                <%= link_to "Wyloguj", destroy_user_session_path, method: :delete %>
+                <%= link_to destroy_user_session_path, method: :delete do %>
+                  <i class="fa fa-sign-out"></i>
+                <% end %>
               <% else %>
-                <%= link_to "Zaloguj", new_user_session_path %>
+                <%= link_to new_user_session_path do %>
+                    <i class="fa fa-sign-in"></i>
+                <% end %>
               <% end %>
             </div>
             

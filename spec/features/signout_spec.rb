@@ -8,11 +8,11 @@ feature 'user log out' do
 		sign_in(user)
 
 		visit root_path
-		expect(page).to have_content("Wyloguj")
-		click_link "Wyloguj"
+		expect(page).to have_css(".fa-sign-out")
+		find(:xpath, "//a[@href='/users/sign_out']").click
 
+		expect(page).to have_css(".fa-sign-in")
 		expect(page).to have_content("Zostałeś wylogowany")
-		expect(page).to_not have_content("Wyloguj")
 		expect(page.current_url).to eq(root_url)
 	end
 end

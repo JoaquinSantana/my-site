@@ -12,26 +12,6 @@
         1,
         null
       ],
-      "/home/tpanek/sites/my-site/spec/support/ck_helpers.rb": [
-        1,
-        null,
-        1,
-        null,
-        0,
-        null,
-        0,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1,
-        1,
-        null
-      ],
       "/home/tpanek/sites/my-site/spec/support/authentication_helpers.rb": [
         1,
         1,
@@ -224,6 +204,8 @@
         1,
         1,
         1,
+        null,
+        1,
         1,
         null,
         1,
@@ -337,6 +319,14 @@
         null,
         null
       ],
+      "/home/tpanek/sites/my-site/app/controllers/homes_controller.rb": [
+        1,
+        null,
+        1,
+        22,
+        null,
+        null
+      ],
       "/home/tpanek/sites/my-site/app/models/post.rb": [
         1,
         1,
@@ -346,16 +336,8 @@
         51,
         null,
         null
-      ],
-      "/home/tpanek/sites/my-site/app/controllers/homes_controller.rb": [
-        1,
-        null,
-        1,
-        22,
-        null,
-        null
       ]
     },
-    "timestamp": 1408612594
+    "timestamp": 1408617798
   }
 }

@@ -7,7 +7,9 @@ feature 'signin for site' do
 
 	scenario 'with correct data' do
 		visit root_path
-		click_link "Zaloguj"
+		expect(page).to have_css(".fa-sign-in")
+		find(:xpath, "//a[@href='/users/sign_in']").click
+
 		fill_in('Email', with: @user.email)
 		fill_in('Hasło', with: @user.password)
 	
@@ -19,7 +21,7 @@ feature 'signin for site' do
 
 	scenario 'with invalid data' do
 		visit root_path
-		click_link "Zaloguj"
+		find(:xpath, "//a[@href='/users/sign_in']").click
 
 		click_button "Zaloguj"
 		expect(page).to have_content('Brak dostępu')
