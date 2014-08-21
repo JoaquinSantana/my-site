@@ -56,57 +56,35 @@
                   <h4>Komentarze</h4>
                   <ul class="comments-list">
                       <!-- Single comment -->
-                      <li class="comment">
-                          <div class="comment-avatar"><img src="images/anonymous.jpg" alt="" /></div>
-                          <div class="comment-content">
-                              <div class="comment-meta">
-                                  <span class="comment-author">Tony Halik</span>
-                                  <span class="comment-reply"><a href="#">Reply</a></span>
-                                  <span class="comment-date">22 May, 2014</span>
-                              </div>
-                              <div class="comment-text">
-                                  Hi! This is awesome template! Where may I buy it? 
-                              </div>
-                          </div>
-                          <ul>
-                            <li class="comment">
-                                <div class="comment-avatar"><img src="images/my-photo.jpg" alt="" /></div>
-                                <div class="comment-content">
-                                    <div class="comment-meta">
-                                        <span class="comment-author">Johnatan Doe</span>
-                                        <span class="comment-reply"><a href="#">Reply</a></span>
-                                        <span class="comment-date">22 May, 2014</span>
-                                    </div>
-                                    <div class="comment-text">
-                                        Hi! Of course you may buy it by <a href="http://themeforest.net/user/suelo/portfolio" target="_blank">Themeforest</a>!
-                                    </div>
+
+                      <% @post.comments.each do |c| %>
+
+                        <li class="comment">
+                            <div class="comment-avatar"><img src="images/anonymous.jpg" alt="" /></div>
+                            <div class="comment-content">
+                                <div class="comment-meta">
+                                    <span class="comment-author"><%= c.podpis %></span>
+                                    <span class="comment-reply"><a href="#">Reply</a></span>
+                                    <span class="comment-date"><%= l c.created_at %></span>
                                 </div>
-                            </li>
-                          </ul>
-                      </li>
-                      <!-- Single comment -->
-                      <li class="comment">
-                          <div class="comment-avatar"><img src="images/anonymous.jpg" alt="" /></div>
-                          <div class="comment-content">
-                              <div class="comment-meta">
-                                  <span class="comment-author">Helen Boobis</span>
-                                  <span class="comment-reply"><a href="#">Reply</a></span>
-                                  <span class="comment-date">22 May, 2014</span>
-                              </div>
-                              <div class="comment-text">
-                                  It's perfects for everyone! 
-                              </div>
-                          </div>
-                      </li>
-                  </ul>
-                  
+                                <div class="comment-text">
+                                    <%= c.komentarz %>
+                                </div>
+                            </div>
+                        </li>
+                      <% end %>
+                  </ul>   
                 </div>
                 
-                <div class="col-lg-4">
+                <div class="col-lg-4 well">
             
                   <!-- Comments -->
                   <h4>Napisz swój komentarz</h4>
-                  <form role="form">
+
+
+                  <%= render 'comments/form' %>
+
+                  <!-- <form role="form">
                     <div class="form-group">
                       <label for="name">Name</label>
                       <input type="text" class="form-control" id="name" placeholder="Enter your name...">
@@ -117,7 +95,7 @@
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                   </form>
-                  
+                   -->
                 </div>
                 
             </div>

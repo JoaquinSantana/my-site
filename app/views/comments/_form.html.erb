@@ -1,0 +1,26 @@
+<%= simple_form_for([@post, @post.comments.build]) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+  	<div class="input-group">
+      <%= f.input :podpis, label: false do %>
+        <div class="input-group">
+          <%= f.input_field :podpis, class: 'form-control', placeholder: 'Podpis' %>
+          <span class="input-group-addon glyphicon glyphicon-envelope"></span>
+          </div>
+    <% end %></br>
+
+  	<div class="input-group col-md-12">
+      <%= f.input :komentarz, label: false do %>
+        <div class="input-group">
+          <%= f.input_field :komentarz, class: 'form-control', placeholder: 'Twój komentarz' %>
+          <span class="input-group-addon glyphicon glyphicon-envelope"></span>
+          </div>
+    <% end %></br>
+
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit, "Dodaj komentarz", class: 'btn btn-primary btn-block btn-sm' %>
+  </div>
+<% end %>           
