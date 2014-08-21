@@ -44,13 +44,9 @@
       
       	<div class="col-lg-12">
 
-        	<p class="lead">Quisque augue mi, semper eu dictum a, consectetur non est. Quisque sollicitudin, orci vel dictum mollis, orci massa mollis tellus, sed condimentum lacus enim euismod turpis. Donec ultrices mi vel diam ornare rutrum. Ut vitae ipsum diam. Ut scelerisque, libero vel facilisis malesuada, turpis ligula interdum massa, sit amet pellentesque elit dolor et enim. </p>
-            <p>Aenean at ultricies nunc. Vestibulum mattis ullamcorper lectus, porta porttitor urna molestie at. In fermentum, ligula at malesuada viverra, lectus mi pharetra purus, vel feugiat nunc nunc sit amet felis. Vivamus nec ligula malesuada, accumsan turpis id, tempus diam. Aenean sit amet auctor orci. Aenean dui justo, imperdiet at luctus quis, vehicula id turpis. Vestibulum in sapien ultrices, ultricies orci vel, bibendum velit.  Aenean id leo eu eros tincidunt ullamcorper quis pulvinar mi. Maecenas et egestas dui, nec sagittis neque. Quisque neque erat, pharetra at velit ut, molestie lacinia nisl. Aliquam ornare fermentum arcu quis pellentesque. Aliquam non leo non magna vestibulum elementum egestas eget nisl. Aliquam ac lacus mi. Aenean venenatis orci leo, sed rhoncus urna hendrerit a. Duis vitae purus dui. Nulla vestibulum odio a aliquet fermentum. Phasellus a condimentum mi. Fusce id tortor vel risus sodales ullamcorper. Quisque eget consectetur risus. </p>
-            <blockquote>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-              <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
-            </blockquote>
-            <p>Aenean id leo eu eros tincidunt ullamcorper quis pulvinar mi. Maecenas et egestas dui, nec sagittis neque. Quisque neque erat, pharetra at velit ut, molestie lacinia nisl. Aliquam ornare fermentum arcu quis pellentesque. Aliquam non leo non magna vestibulum elementum egestas eget nisl. Aliquam ac lacus mi. Aenean venenatis orci leo, sed rhoncus urna hendrerit a. Duis vitae purus dui. Nulla vestibulum odio a aliquet fermentum. Phasellus a condimentum mi. Fusce id tortor vel risus sodales ullamcorper. Quisque eget consectetur risus. </p>
+        	<p class="lead"><%= @post.description %></p>
+
+          <p><%= @post.body.html_safe %></p>
             
             <div class="row">
             

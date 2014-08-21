@@ -24,4 +24,5 @@
 //= require owl.carousel.min
 //= require page-loader.min
 //= require waypoints.min
+//= require ckeditor/init
 //= require_tree .

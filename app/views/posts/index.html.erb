@@ -31,49 +31,49 @@
             </div>
           </article>
         <% end %>
+
       </div>
-          
+  </div>
+    
+  <!-- Page Content -->
+  <div class="content padded">
+    <div class="row">
+      <% @posts.each do |post| %>
+        <!-- Single post --> 
+        <article class="post col-md-6">
+            <div class="post-image"><img src="images/blog/post_01.jpg" alt="" /></div>
+              <div class="post-content-holder">
+                  <div class="post-content">
+                      <div class="post-info clearfix">
+                          <span class="post-date"><%= l post.created_at %></span>
+                          <div class="post-meta">
+                              <span><i class="fa fa-comment"></i><a href="#">4 comments</a></span>
+                              <span><i class="fa fa-tag"></i><a href="#">Webdesign</a></span>
+                          </div>
+                      </div>
+                      <div class="post-text">
+                          <h3><a href="single-post-clean.html"><%= post.title %></a></h3>
+                          <p class="lead">Per sint eirmod expetenda te. Pro ne essent.</p>
+                          <p>Per ea tibique fabellas electram. Ea aliquam corpora vis. Ne quot civibus atomorum quo. </p>
+                          <%= link_to "Czytaj więcej", post_path(post), class: 'btn btn-primary btn-sm' %>
+                      </div>
+                  </div>
+              </div>
+        </article>
+      <% end %>
     </div>
     
-    <!-- Page Content -->
-    <div class="content padded">
-      <div class="row">
-        <% @posts.each do |post| %>
-          <!-- Single post --> 
-          <article class="post col-md-6">
-              <div class="post-image"><img src="images/blog/post_01.jpg" alt="" /></div>
-                <div class="post-content-holder">
-                    <div class="post-content">
-                        <div class="post-info clearfix">
-                            <span class="post-date"><%= l post.created_at %></span>
-                            <div class="post-meta">
-                                <span><i class="fa fa-comment"></i><a href="#">4 comments</a></span>
-                                <span><i class="fa fa-tag"></i><a href="#">Webdesign</a></span>
-                            </div>
-                        </div>
-                        <div class="post-text">
-                            <h3><a href="single-post-clean.html"><%= post.title %></a></h3>
-                            <p class="lead">Per sint eirmod expetenda te. Pro ne essent.</p>
-                            <p>Per ea tibique fabellas electram. Ea aliquam corpora vis. Ne quot civibus atomorum quo. </p>
-                            <%= link_to "Czytaj więcej", post_path(post), class: 'btn btn-primary btn-sm' %>
-                        </div>
-                    </div>
-                </div>
-          </article>
-        <% end %>
-      </div>
-      
-      <!-- Bottom Bar -->
-      <div class="bottom-bar">
-      
-          <!-- Contact List -->
-          <ul class="list-inline">
-            <li><i class="inline-icon icon-before-and-after text-primary fa fa-comment"></i><a href="#">tomekkpanek@gmail.com</a></li>
-          </ul>
-       
-      </div>
-        
+    <!-- Bottom Bar -->
+    <div class="bottom-bar">
+    
+        <!-- Contact List -->
+        <ul class="list-inline">
+          <li><i class="inline-icon icon-before-and-after text-primary fa fa-comment"></i><a href="#">tomekkpanek@gmail.com</a></li>
+        </ul>
+     
     </div>
+      
+  </div>
   
 </div>
 <!-- Page Content / End -->

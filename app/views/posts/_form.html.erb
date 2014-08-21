@@ -1,23 +1,37 @@
-<div id="page-content">
 
-<%= simple_form_for(@post, html: {class: 'form-horizontal' }) do |f| %>
-  <% if @post.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@post.errors.count, "error") %> prohibited this post from being saved:</h2>
+  <div class="content padded">
+    <div  class="row">
+      <div class="col-md-12 well">
 
-      <ul>
-      <% @post.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
+        <%= simple_form_for(@post, html: {class: 'form-horizontal' }) do |f| %>
+         <%= f.error_notification %>
+
+          <div class="form-inputs">
+            <div class="input-group">
+              <%= f.input :title, label: false do %>
+                <div class="input-group">
+                  <%= f.input_field :title, class: 'form-control', placeholder: 'Tytuł postu' %>
+                  <span class="input-group-addon glyphicon glyphicon-random"></span>
+                </div>
+              <% end %></br>
+            </div>
+
+            <div class="input-group">
+              <%= f.input :description, label: false do %>
+                <div class="input-group">
+                  <%= f.input_field :description, class: 'form-control', placeholder: 'Krótki opis' %>
+                  <span class="input-group-addon glyphicon glyphicon-random"></span>
+                </div>
+              <% end %></br>
+            </div>
+
+            <%= f.input :body, :as => :ckeditor, :input_html => { :ckeditor => {:toolbar => 'Full'} }, label: false %></br>
+          </div>
+            <div class="form-actions">
+              <%= f.button :submit, "Zapisz", class: 'btn btn-black btn-block btn-sm' %>
+            </div>
+        <% end %>
+
+      </div>
     </div>
-  <% end %>
-
-  <%= f.input :title %>
-  <%= f.input :body %>
-
-  <div class="actions">
-    <%= f.submit "Zapisz" %>
   </div>
-<% end %>
-</div>
