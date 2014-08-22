@@ -41,3 +41,35 @@ label.checkbox {
 .post {
   margin-bottom: 80px !important;
 }
+
+
+/*====== Comments =========*/
+
+
+.comment .comment-content {
+  transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+.comment:hover .comment-content {
+  -webkit-box-shadow: 21px 21px 100px 0px rgba(0,0,0,0.1);
+  -moz-box-shadow: 21px 21px 100px 0px rgba(0,0,0,0.1);
+  box-shadow: 21px 21px 100px 0px rgba(0,0,0,0.1);
+}
+
+
+.formularz {
+  padding: 20px;
+  transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+.formularz:hover {
+  -webkit-box-shadow: 21px 21px 100px 0px rgba(0,0,0,0.1);
+  -moz-box-shadow: 21px 21px 100px 0px rgba(0,0,0,0.1);
+  box-shadow: 21px 21px 100px 0px rgba(0,0,0,0.1);
+}

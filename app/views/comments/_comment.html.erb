@@ -1,23 +1,24 @@
-<li class="comment">
-    <div class="comment-avatar"><img src="images/anonymous.jpg" alt="" /></div>
-      <div class="comment-content">
-          <div class="comment-meta">
-              <span class="comment-author"><%= comment.podpis %></span>
-              <span class="comment-reply"><a href="#">Reply</a></span>
-              <span class="comment-date">
-                <% if comment.persisted? %> 
-                  <%= l comment.created_at %>
-                <% end %>
-              </span>
-              <span class="comment-reply">
-                <% if user_signed_in? && comment.persisted? %>
-                  <%= link_to "Edytuj", edit_post_comment_path(@post, comment) %>
-                  <%= link_to "Usuń", [@post, comment], method: :delete, data: { confirm: "Czy chcesz usunąć ten wpis?" } %>
-                <% end %>
-              </span>
-          </div>
-        <div class="comment-text">
-            <%= comment.komentarz %>
+<% if comment.persisted? %>
+  <li class="comment ">
+    <div class="comment-content post-content">
+        <div class="comment-meta">
+            <span class="comment-author"><%= comment.podpis %></span>
+            <span class="comment-reply"><a href="#">Reply</a></span>
+            <span class="comment-date">
+              <% if comment.persisted? %> 
+                <%= l comment.created_at %>
+              <% end %>
+            </span>
+            <span class="comment-reply">
+              <% if user_signed_in? && comment.persisted? %>
+                <%= link_to "Edytuj", edit_post_comment_path(@post, comment) %>
+                <%= link_to "Usuń", [@post, comment], method: :delete, data: { confirm: "Czy chcesz usunąć ten wpis?" } %>
+              <% end %>
+            </span>
         </div>
-   </div>
-</li>
+      <div class="comment-text">
+          <%= comment.komentarz %>
+      </div>
+     </div>
+  </li>
+<% end %>
