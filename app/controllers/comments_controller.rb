@@ -3,16 +3,6 @@ class CommentsController < ApplicationController
   before_action :set_comment, only: [:show, :edit, :update, :destroy]
 
 
-  # GET /comments/1
-  # GET /comments/1.json
-  def show
-  end
-
-  # GET /comments/new
-  def new
-    @comment = @post.comments.build
-  end
-
   # GET /comments/1/edit
   def edit
   end
@@ -64,6 +54,6 @@ class CommentsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def comment_params
-      params.require(:comment).permit(:podpis, :komentarz, :post_id)
+      params.require(:comment).permit(:podpis, :komentarz)
     end
 end
