@@ -1,4 +1,4 @@
-<%= simple_form_for([@post, @post.comments.build]) do |f| %>
+<%= simple_form_for([@post, @comment]) do |f| %>
   <%= f.error_notification %>
 
   <div class="form-inputs">
@@ -21,6 +21,6 @@
   </div>
 
   <div class="form-actions">
-    <%= f.button :submit, "Dodaj komentarz", class: 'btn btn-primary btn-block btn-sm' %>
+    <%= f.button :submit, "Zapisz", class: 'btn btn-primary btn-block btn-sm' %>
   </div>
 <% end %>           

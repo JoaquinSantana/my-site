@@ -55,10 +55,9 @@
                   <!-- Comments -->
                   <h4>Komentarze</h4>
                   <ul class="comments-list">
-                    <% unless @post.comments.blank? %>
+                   <% if @post.comments.count >= 1 %>
                       <!-- Single comment -->
-                        <%= render @post.comments %>
-
+                      <%= render @comments %>
                     <% end %>
                   </ul>   
                 </div>
@@ -69,7 +68,7 @@
                   <h4>Napisz swój komentarz</h4>
 
         
-                  <%= render 'posts/new_comment' %>
+                  <%= render 'comments/form' %>
 
                   <!-- <form role="form">
                     <div class="form-group">
