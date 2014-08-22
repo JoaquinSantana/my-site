@@ -11,12 +11,18 @@ feature 'non log in user' do
 		
 		fill_in("Podpis", with: 'Stefan')
 		fill_in("Twój komentarz", with: 'Mój pierwszy komentarz')
-		
-
+	
 		click_button "Dodaj komentarz"
 
 		expect(page).to have_content("Twój komentarz został dodany")
-		expect(page.current_url).to eq(post_path(@post))
+		expect(page.current_url).to eq(post_url(@post))
+	end
+
+	scenario 'cant create comment with invalid data' do
+		click_button "Dodaj komentarz"
+
+		expect(page).to have_content("Musisz się podpisać")
+		expect(page).to have_content("Pole komentarz musi być uzupełnione")
 	end
 
 end
