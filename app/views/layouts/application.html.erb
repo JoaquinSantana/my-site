@@ -55,7 +55,9 @@
 
 <%= render 'layouts/header' %>
 
-<%= render 'layouts/flashes' %>
+<div id="page-content">
+    <%= render 'shared/flashes', flash: flash %> 
+</div>
 
 <%= yield %>
 

@@ -66,10 +66,19 @@ label.checkbox {
   -moz-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
+    &:hover {
+    -webkit-box-shadow: 21px 21px 100px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 21px 21px 100px 0px rgba(0,0,0,0.1);
+    box-shadow: 21px 21px 100px 0px rgba(0,0,0,0.1);
+  }
 }
 
-.formularz:hover {
-  -webkit-box-shadow: 21px 21px 100px 0px rgba(0,0,0,0.1);
-  -moz-box-shadow: 21px 21px 100px 0px rgba(0,0,0,0.1);
-  box-shadow: 21px 21px 100px 0px rgba(0,0,0,0.1);
+
+.alert-success {
+  background-image: -webkit-linear-gradient(top, #ffefbf 0%, #f8d25f 100%);
+  background-image:         linear-gradient(to bottom, #ffefbf 0%, #f8d25f 100%);
+  /* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffdff0d8', endColorstr='#ffc8e5bc', GradientType=0); */
+  background-repeat: repeat-x;
+  border-color: #E6B623;
+  color: gray !important;
 }
