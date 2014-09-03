@@ -275,8 +275,8 @@ $(document).ready(function (){
 	
 	function mapInitialize() {
 	
-	  var yourLatitude = 40.758895;
-	  var yourLongitude = -73.985131;
+	  var yourLatitude = 50.402;
+	  var yourLongitude = 18.89;
 	  
 	  var myOptions = {
 		zoom: 14,
@@ -291,13 +291,13 @@ $(document).ready(function (){
 					  {
 						  "stylers": [
 							  {
-								  "hue": "#ff1a00"
+								  "hue": "#F8D25F"
 							  },
 							  {
 								  "invert_lightness": true
 							  },
 							  {
-								  "saturation": -100
+								  "saturation": -65
 							  },
 							  {
 								  "lightness": 33
