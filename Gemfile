@@ -15,9 +15,10 @@ gem 'bootstrap-sass', '~> 3.2.0'
 gem 'autoprefixer-rails'
 gem 'devise'
 gem 'ckeditor'
+gem 'figaro'
+gem 'pg'
 
 group :development do
-  gem 'sqlite3', '1.3.8'
   gem 'rspec-rails', '~> 2.14'
   gem 'factory_girl_rails', '~> 4.2.1'
 end
@@ -32,7 +33,6 @@ group :test do
 end
 
 group :production do
-  gem 'pg', '0.15.1'
   gem 'rails_12factor', '0.0.2'
 end
 
