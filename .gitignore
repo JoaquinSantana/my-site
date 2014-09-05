@@ -9,7 +9,7 @@
 /log/*.log
 /tmp
 
-/coverage
+coverage/
 /coverage/*.html
 /coverage/.last_run.json
 /coverage/.resultset.json
