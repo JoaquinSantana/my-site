@@ -1,4 +1,5 @@
 <%= simple_form_for(@contact, :url => { :controller => "contacts", :action => 'create', :anchor => "contact" }, :html => {:class => 'form-horizontal' }) do |f| %>
+  <%= flash_messages layout_flash: false %>
   <%= f.error_notification %>
 
   <div class="form-inputs">
@@ -38,4 +39,4 @@
 
 <% end %>   
 
-<%= flash_messages layout_flash: false %>
+

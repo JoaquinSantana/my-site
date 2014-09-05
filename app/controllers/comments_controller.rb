@@ -16,7 +16,7 @@ class CommentsController < ApplicationController
         redirect_to @post
         flash[:success] = "Twój komentarz został dodany"    
       else
-        flash[:error] = "Komentarz nie został dodany"
+        flash.now[:error] = "Komentarz nie został dodany"
         render 'posts/show'
       end
   end

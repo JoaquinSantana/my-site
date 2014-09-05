@@ -1,8 +1,9 @@
 <%= simple_form_for([@post, @comment]) do |f| %>
+<%= flash_messages layout_flash: false %>          
   <%= f.error_notification %>
 
   <div class="form-inputs">
-  	<div class="input-group">
+    <div class="input-group">
       <%= f.input :podpis, label: false do %>
         <div class="input-group">
           <%= f.input_field :podpis, class: 'form-control', placeholder: 'Podpis' %>
@@ -10,7 +11,7 @@
           </div>
     <% end %></br>
 
-  	<div class="input-group col-md-12">
+    <div class="input-group col-md-12">
       <%= f.input :komentarz, label: false do %>
         <div class="input-group">
           <%= f.input_field :komentarz, class: 'form-control', placeholder: 'Twój komentarz' %>
@@ -23,4 +24,4 @@
   <div class="form-actions">
     <%= f.button :submit, "Zapisz", class: 'btn btn-primary btn-block btn-sm' %>
   </div>
-<% end %>           
+<% end %> 
