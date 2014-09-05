@@ -30,11 +30,11 @@ class PostsController < ApplicationController
   def create
     @post = Post.new(post_params)
 
-      if @post.save
-        redirect_to @post
-        flash[:success] = "Post został utworzony"
-      else
-        render :new
+    if @post.save
+      redirect_to @post
+      flash[:success] = "Post został utworzony"
+    else
+      render :new
     end
   end
 

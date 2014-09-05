@@ -82,3 +82,22 @@ label.checkbox {
   border-color: #E6B623;
   color: gray !important;
 }
+
+/******** Flash **********/
+
+
+#flash_success {
+  background-color: $yellow;
+  color: black;
+  padding: 10px 0px;
+  margin-top: 15px;
+  text-align: center;
+}
+#flash_error, #flash_alert {
+  @extend .alert;
+  @extend .alert-danger;
+}
+#flash_warning {
+  @extend .alert;
+  @extend .alert-warning;
+}

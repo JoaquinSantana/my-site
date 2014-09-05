@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/home/pnc/sites/moja_strona/spec/support/auth_helpers.rb": [
+      "/home/tpanek/sites/my-site/spec/support/auth_helpers.rb": [
         1,
         1,
         0,
@@ -12,7 +12,7 @@
         1,
         null
       ],
-      "/home/pnc/sites/moja_strona/spec/support/authentication_helpers.rb": [
+      "/home/tpanek/sites/my-site/spec/support/authentication_helpers.rb": [
         1,
         1,
         9,
@@ -27,7 +27,7 @@
         1,
         null
       ],
-      "/home/pnc/sites/moja_strona/app/controllers/posts_controller.rb": [
+      "/home/tpanek/sites/my-site/app/controllers/posts_controller.rb": [
         1,
         1,
         1,
@@ -99,14 +99,47 @@
         null,
         null
       ],
-      "/home/pnc/sites/moja_strona/app/controllers/application_controller.rb": [
+      "/home/tpanek/sites/my-site/app/controllers/application_controller.rb": [
         1,
         null,
         null,
         1,
         null
       ],
-      "/home/pnc/sites/moja_strona/spec/features/landing_page_spec.rb": [
+      "/home/tpanek/sites/my-site/spec/features/contact_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/home/tpanek/sites/my-site/spec/features/landing_page_spec.rb": [
         1,
         null,
         1,
@@ -129,7 +162,7 @@
         null,
         null
       ],
-      "/home/pnc/sites/moja_strona/spec/features/posts/comments/create_comments_spec.rb": [
+      "/home/tpanek/sites/my-site/spec/features/posts/comments/create_comments_spec.rb": [
         1,
         null,
         1,
@@ -159,7 +192,7 @@
         null,
         null
       ],
-      "/home/pnc/sites/moja_strona/spec/features/posts/comments/deleting_comment_spec.rb": [
+      "/home/tpanek/sites/my-site/spec/features/posts/comments/deleting_comment_spec.rb": [
         1,
         null,
         null,
@@ -186,7 +219,7 @@
         null,
         null
       ],
-      "/home/pnc/sites/moja_strona/spec/features/posts/comments/editing_comments_spec.rb": [
+      "/home/tpanek/sites/my-site/spec/features/posts/comments/editing_comments_spec.rb": [
         1,
         null,
         1,
@@ -234,7 +267,7 @@
         null,
         null
       ],
-      "/home/pnc/sites/moja_strona/spec/features/posts/creating_post_spec.rb": [
+      "/home/tpanek/sites/my-site/spec/features/posts/creating_post_spec.rb": [
         1,
         null,
         1,
@@ -279,7 +312,7 @@
         null,
         null
       ],
-      "/home/pnc/sites/moja_strona/spec/features/posts/deleting_post_spec.rb": [
+      "/home/tpanek/sites/my-site/spec/features/posts/deleting_post_spec.rb": [
         1,
         null,
         1,
@@ -299,7 +332,7 @@
         null,
         null
       ],
-      "/home/pnc/sites/moja_strona/spec/features/posts/updating_post_spec.rb": [
+      "/home/tpanek/sites/my-site/spec/features/posts/updating_post_spec.rb": [
         1,
         null,
         1,
@@ -350,7 +383,7 @@
         null,
         null
       ],
-      "/home/pnc/sites/moja_strona/spec/features/posts/viewing_post_spec.rb": [
+      "/home/tpanek/sites/my-site/spec/features/posts/viewing_post_spec.rb": [
         1,
         null,
         1,
@@ -366,7 +399,7 @@
         null,
         null
       ],
-      "/home/pnc/sites/moja_strona/spec/features/signin_user_spec.rb": [
+      "/home/tpanek/sites/my-site/spec/features/signin_user_spec.rb": [
         1,
         null,
         1,
@@ -398,7 +431,7 @@
         null,
         null
       ],
-      "/home/pnc/sites/moja_strona/spec/features/signout_spec.rb": [
+      "/home/tpanek/sites/my-site/spec/features/signout_spec.rb": [
         1,
         null,
         null,
@@ -419,14 +452,14 @@
         null,
         null
       ],
-      "/home/pnc/sites/moja_strona/spec/models/comment_spec.rb": [
+      "/home/tpanek/sites/my-site/spec/models/comment_spec.rb": [
         1,
         null,
         1,
         null,
         null
       ],
-      "/home/pnc/sites/moja_strona/app/models/comment.rb": [
+      "/home/tpanek/sites/my-site/app/models/comment.rb": [
         1,
         1,
         1,
@@ -439,34 +472,90 @@
         null,
         null
       ],
-      "/home/pnc/sites/moja_strona/spec/models/user_spec.rb": [
+      "/home/tpanek/sites/my-site/spec/models/contact_spec.rb": [
+        1,
+        null,
+        1,
+        null
+      ],
+      "/home/tpanek/sites/my-site/app/models/contact.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/home/tpanek/sites/my-site/spec/models/user_spec.rb": [
         1,
         null,
         1,
         null,
         null
       ],
-      "/home/pnc/sites/moja_strona/app/models/post.rb": [
+      "/home/tpanek/sites/my-site/app/controllers/homes_controller.rb": [
+        1,
+        null,
+        1,
+        34,
+        34,
+        null,
+        null
+      ],
+      "/home/tpanek/sites/my-site/app/models/post.rb": [
         1,
         1,
         1,
         1,
         null,
-        84,
+        87,
         null,
         1,
         null,
         null
       ],
-      "/home/pnc/sites/moja_strona/app/controllers/homes_controller.rb": [
+      "/home/tpanek/sites/my-site/app/controllers/contacts_controller.rb": [
         1,
         null,
         1,
-        31,
+        null,
+        null,
+        1,
+        2,
+        2,
+        1,
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        2,
         null,
         null
       ],
-      "/home/pnc/sites/moja_strona/app/controllers/comments_controller.rb": [
+      "/home/tpanek/sites/my-site/app/mailers/contact_mailer.rb": [
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/home/tpanek/sites/my-site/app/controllers/comments_controller.rb": [
         1,
         1,
         1,
@@ -526,6 +615,6 @@
         null
       ]
     },
-    "timestamp": 1408985128
+    "timestamp": 1409904064
   }
 }

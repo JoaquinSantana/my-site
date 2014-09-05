@@ -17,6 +17,7 @@ gem 'devise'
 gem 'ckeditor'
 gem 'figaro'
 gem 'pg'
+gem 'validates_email_format_of'
 
 group :development do
   gem 'rspec-rails', '~> 2.14'

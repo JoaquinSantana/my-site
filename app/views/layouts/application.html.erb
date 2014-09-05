@@ -56,7 +56,7 @@
 <%= render 'layouts/header' %>
 
 <div id="page-content">
-    <%= render 'shared/flashes', flash: flash %> 
+  <%= flash_messages if show_layout_flash? %>
 </div>
 
 <%= yield %>

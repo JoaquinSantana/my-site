@@ -1,0 +1,41 @@
+<%= simple_form_for(@contact, :url => { :controller => "contacts", :action => 'create', :anchor => "contact" }, :html => {:class => 'form-horizontal' }) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+  	<div class="input-group">
+      <%= f.input :podpis, label: false do %>
+        <div class="input-group">
+          <%= f.input_field :podpis, class: 'form-control', placeholder: 'Podpis' %>
+          <span class="input-group-addon glyphicon glyphicon-envelope"></span>
+          </div>
+    <% end %></br>
+
+    <div class="input-group">
+      <%= f.input :email, label: false do %>
+        <div class="input-group">
+          <%= f.input_field :email, class: 'form-control', placeholder: 'Email' %>
+          <span class="input-group-addon glyphicon glyphicon-envelope"></span>
+          </div>
+    <% end %></br>
+
+  	<div class="input-group col-md-12">
+      <%= f.input :wiadomosc, label: false do %>
+        <div class="input-group">
+          <%= f.input_field :wiadomosc, class: 'form-control', placeholder: 'Twoja wiadomość' %>
+          <span class="input-group-addon glyphicon glyphicon-envelope"></span>
+          </div>
+    <% end %></br>
+
+    <div class="hidden">
+      <%= f.hidden_field :nickname %>
+    </div>
+
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit, "Wyślij", class: 'btn btn-primary btn-block btn-sm' %>
+  </div>
+
+<% end %>   
+
+<%= flash_messages layout_flash: false %>
