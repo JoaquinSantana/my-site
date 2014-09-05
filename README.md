@@ -2,7 +2,7 @@ Tomasz Panek personal website
 =============================
 
 
-Specyfikacja:
+Specification:
 
 	* Ruby on Rails
 
@@ -16,3 +16,5 @@ Specyfikacja:
 
 	* Rspec + Capybara
 
+
+Check this site on: [link](http://tpanek.pl)
