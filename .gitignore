@@ -20,3 +20,6 @@ doc/
 /config/application.yml
 /config/database.yml
 /config/secrets.yml
+
+# Coverage
+/coverage
