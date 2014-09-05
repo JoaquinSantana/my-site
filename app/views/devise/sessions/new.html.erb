@@ -7,6 +7,7 @@
       <div class="col-md-6 col-md-offset-3 well">
 
       <h4>Zaloguj</h4>
+      <%= flash_messages layout_flash: false %>
 
         <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name), html: {class: 'form-horizontal' }) do |f| %>
         <%= f.error_notification %>
