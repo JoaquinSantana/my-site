@@ -1,15 +1,18 @@
-== Tomasz Panek personal website
+Tomasz Panek personal website
+=============================
 
 
 Specyfikacja:
 
-* Ruby on Rails
+	* Ruby on Rails
 
-* Heroku
+	* Heroku
 
-* Bootstrap 3
+	* Bootstrap 3
 
-* pg
+	* pg
 
-* SASS
+	* SASS
+
+	* Rspec + Capybara
 
