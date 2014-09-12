@@ -17,4 +17,4 @@ Specification:
 	* Rspec + Capybara
 
 
-Check this site on: [link](http://tpanek.pl)
+Check this site on: [tpanek.pl](http://tpanek.pl)
