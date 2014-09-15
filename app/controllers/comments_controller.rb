@@ -14,7 +14,7 @@ class CommentsController < ApplicationController
   # POST /comments.json
   def create
     if params[:comment][:parent_id].to_i > 0
-      parent = @post.comments.find_by_id(params[:comment].delete(:parent_id))
+      parent = @post.comments.find_by(id: params[:comment].delete(:parent_id))
       @comment = parent.children.build(comment_params)
       @comment.post = @post
     else

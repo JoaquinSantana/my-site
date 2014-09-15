@@ -13,14 +13,14 @@
               <% end %>
             </span>
             <span class="comment-reply">
-              <% if user_signed_in? && comment.persisted? %>
+              <% if user_signed_in? %>
                 <%= link_to "Edytuj", edit_post_comment_path(@post, comment) %>
                 <%= link_to "Usuń", [@post, comment], method: :delete, data: { confirm: "Czy chcesz usunąć ten wpis?" } %>
               <% end %>
             </span>
         </div>
       <div class="comment-text">
-          <%= comment.komentarz %>
+          <%= wrap comment.komentarz %>
       </div>
      </div>
   </li>
