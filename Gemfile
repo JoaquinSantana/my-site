@@ -25,11 +25,8 @@ group :development do
   gem 'factory_girl_rails', '~> 4.2.1'
 end
 
-group :development, :test do
-	gem 'faker'
-end
-
 group :test do
+  gem 'faker', '~> 1.1.2'
   gem 'capybara', '~> 2.1.0'
   gem 'database_cleaner', '~> 1.0.1'
   gem 'launchy', '~> 2.3.0'

@@ -209,7 +209,7 @@ DEPENDENCIES
   database_cleaner (~> 1.0.1)
   devise
   factory_girl_rails (~> 4.2.1)
-  faker
+  faker (~> 1.1.2)
   figaro
   jbuilder (~> 2.0)
   jquery-rails
