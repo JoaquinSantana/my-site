@@ -26,7 +26,7 @@
                                 <h3><a href="single-post.html"><%= post.title %></a></h3>
                                 <p class="lead"><%= post.description %></p>
                                 <%= link_to "Czytaj więcej", post_path(post), class: "btn btn-primary btn-sm" %>
-                                <%= if user_signed_in? %>
+                                <% if user_signed_in? %>
                                   <%= link_to "Edytuj", edit_post_path(post), class: "btn btn-primary btn-sm" %>      
                                   <%= link_to "Usuń", post_path(post), method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-primary btn-sm" %>    
                                 <% end %>
