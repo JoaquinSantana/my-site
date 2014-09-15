@@ -2,6 +2,8 @@
 <%= flash_messages layout_flash: false %>          
   <%= f.error_notification %>
 
+  <%= f.input :parent_id, as: :hidden %>
+  <br>
   <div class="form-inputs">
     <div class="input-group">
       <%= f.input :podpis, label: false do %>

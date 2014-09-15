@@ -2,6 +2,9 @@ class CommentsController < ApplicationController
   before_action :set_post
   before_action :set_comment, only: [:show, :edit, :update, :destroy]
 
+  def new
+    @comment = @post.comments.build(parent_id: params[:parent_id])
+  end
 
   # GET /comments/1/edit
   def edit
@@ -10,15 +13,21 @@ class CommentsController < ApplicationController
   # POST /comments
   # POST /comments.json
   def create
-    @comment = @post.comments.create(comment_params)
+    if params[:comment][:parent_id].to_i > 0
+      parent = @post.comments.find_by_id(params[:comment].delete(:parent_id))
+      @comment = parent.children.build(comment_params)
+      @comment.post = @post
+    else
+      @comment = @post.comments.create(comment_params)
+    end
 
-      if @comment.save
-        redirect_to @post
-        flash[:success] = "Twój komentarz został dodany"    
-      else
-        flash.now[:error] = "Komentarz nie został dodany"
-        render 'posts/show'
-      end
+    if @comment.save
+      flash[:success] = "Twój komentarz został dodany"    
+      redirect_to @post
+    else
+      flash.now[:error] = "Komentarz nie został dodany"
+      render :edit
+    end
   end
 
   # PATCH/PUT /comments/1

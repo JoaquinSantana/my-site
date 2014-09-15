@@ -55,9 +55,9 @@
                   <!-- Comments -->
                   <h4>Komentarze</h4>
                   <ul class="comments-list">
-                   <% if @post && @post.comments.count >= 1 %>
+                   <% if @comments && @comments.count >= 1 %>
                       <!-- Single comment -->
-                      <%= render @post.comments %>
+                      <%= comments_tree_for @comments %>
                     <% end %>
                   </ul>   
                 </div>

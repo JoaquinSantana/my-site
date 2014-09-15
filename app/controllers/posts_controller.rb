@@ -13,7 +13,7 @@ class PostsController < ApplicationController
   # GET /posts/1.json
   def show
     @comment = @post.comments.build
-    @comments = @post.comments
+    @comments = @post.comments.persisted.hash_tree
   end
 
   # GET /posts/new

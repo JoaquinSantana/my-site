@@ -3,7 +3,10 @@
     <div class="comment-content post-content">
         <div class="comment-meta">
             <span class="comment-author"><%= comment.podpis %></span>
-            <span class="comment-reply"><a href="#">Reply</a></span>
+            <% from_reply_form ||= nil %>
+            <% unless from_reply_form %>
+              <span class="comment-reply"><%= link_to "Odpisz", new_comment_path(@post, comment.id) %></span>
+            <% end %>
             <span class="comment-date">
               <% if comment.persisted? %> 
                 <%= l comment.created_at %>

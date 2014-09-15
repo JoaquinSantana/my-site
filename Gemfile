@@ -18,14 +18,16 @@ gem 'ckeditor'
 gem 'figaro'
 gem 'pg'
 gem 'validates_email_format_of'
+gem 'closure_tree'
 
 group :development do
   gem 'rspec-rails', '~> 2.14'
   gem 'factory_girl_rails', '~> 4.2.1'
+  gem 'faker'
 end
 
 group :test do
-  gem 'faker', '~> 1.1.2'
+  gem 'faker'
   gem 'capybara', '~> 2.1.0'
   gem 'database_cleaner', '~> 1.0.1'
   gem 'launchy', '~> 2.3.0'

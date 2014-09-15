@@ -45,6 +45,13 @@ label.checkbox {
 
 /*====== Comments =========*/
 
+.replies {
+  margin-left: 50px;
+}
+
+.replies .replies .replies {
+  margin-left: 0;
+}
 
 .comment .comment-content {
   transition: all 0.3s ease-in-out;
