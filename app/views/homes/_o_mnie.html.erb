@@ -21,6 +21,7 @@
             <div class="pull-right">
 
               <% if user_signed_in? %>
+                Hi Tomek!
                 <%= link_to destroy_user_session_path, method: :delete do %>
                   <i class="fa fa-sign-out"></i>
                 <% end %>
