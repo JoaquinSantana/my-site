@@ -45,8 +45,9 @@
       	<div class="col-lg-12">
 
         	<p class="lead"><%= @post.description %></p>
-
-          <p><%= @post.body.html_safe %></p>
+          <div class="post_body">
+            <%= @post.body.html_safe %>
+          </div>
             
             <div class="row">
             

@@ -40,6 +40,19 @@ label.checkbox {
 
 .post {
   margin-bottom: 80px !important;
+
+}
+
+.post_body {
+  font-size: 15px;
+  line-height: 0.5cm !important;
+  margin-bottom: 0 !important;
+  #pre {
+    padding: 40px 0;
+    p {
+      margin-bottom: 0;
+    }
+  }
 }
 
 
