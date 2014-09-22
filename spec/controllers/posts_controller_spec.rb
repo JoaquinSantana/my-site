@@ -1,7 +1,8 @@
 require 'spec_helper'
 
 describe PostsController do
-	let(:valid_attributes) { { title: "Tytul", description: "To jest krótki opis", body: "To jest zawartość postu" } }
+	userek = FactoryGirl.create(:user)
+	let(:valid_attributes) { { title: "Tytul", description: "To jest krótki opis", body: "To jest zawartość postu", user_id: userek.id } }
 	let(:valid_session) { {} }
 
 	context "non login user" do

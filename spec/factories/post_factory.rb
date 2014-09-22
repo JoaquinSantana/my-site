@@ -3,5 +3,6 @@ FactoryGirl.define do
     title "First Post"
     description "Post description"
     body  "Body Post"
+    user
   end
 end

@@ -19,7 +19,7 @@ feature 'owner of site' do
 
       fill_in('Tytuł postu', with: 'nowy tytul')
       fill_in('Krótki opis', with: 'nowy opis')
-      fill_in('Zawartość postu', with: 'nowa zawartosc postu')
+      fill_in('post_body', with: 'nowa zawartosc postu')
 
       click_button ("Zapisz")
 
@@ -37,7 +37,7 @@ feature 'owner of site' do
 
       fill_in('Tytuł postu', with: '')
       fill_in('Krótki opis', with: '')
-      fill_in('Zawartość postu', with: '')
+      fill_in('post_body', with: '')
 
       click_button ("Zapisz")
 

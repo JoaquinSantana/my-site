@@ -13,7 +13,7 @@ feature 'login user' do
     click_link "Nowy post"
     fill_in("Tytuł postu", with: @post.title)
     fill_in("Krótki opis", with: @post.description)
-    fill_in("Zawartość postu", with: @post.body)
+    fill_in("post_body", with: @post.body)
     click_button "Zapisz"
 
     expect(page).to have_content("Post został utworzony")
@@ -25,7 +25,7 @@ feature 'login user' do
     click_link "Nowy post"
     fill_in("Tytuł postu", with: "")
     fill_in("Krótki opis", with: "")
-    fill_in("Zawartość postu", with: "")
+    fill_in("post_body", with: "")
     click_button "Zapisz"
 
     expect(page).to have_content("Pole tytuł nie może być puste")
