@@ -1,0 +1,26 @@
+<div class="content padded">
+  <div  class="row">
+    <div class="col-md-12 well">
+
+      <%= simple_form_for(@tag, html: {class: 'form-horizontal', novalidate: true }) do |f| %>
+       <%= f.error_notification %>
+
+        <div class="form-inputs">
+          <div class="input-group">
+            <%= f.input :title, label: false do %>
+              <div class="input-group">
+                <%= f.input_field :title, class: 'form-control', placeholder: 'Tytuł postu' %>
+                <span class="input-group-addon glyphicon glyphicon-random"></span>
+              </div>
+            <% end %></br>
+          </div>
+
+          <div class="form-actions">
+            <%= f.button :submit, "Generuj tag", class: 'btn btn-black btn-block btn-sm' %>
+          </div>
+        </div>
+      <% end %>
+
+    </div>
+  </div>
+</div>

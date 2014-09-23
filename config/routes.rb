@@ -8,6 +8,7 @@ Rails.application.routes.draw do
 	get 'posts/:post_id/comments/new/(:parent_id)', to: 'comments#new', as: :new_comment
 
   resources :contacts, only: [:new, :create]
+  resources :tags, only: [:index, :new, :show, :create]
   
   root 'homes#home'
 

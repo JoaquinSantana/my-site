@@ -1,0 +1,40 @@
+<div id="page-content">
+
+	<!-- Page Title -->
+	<div class="page-title bottom-padded">
+    	
+        <!-- Page Title Background -->
+    	<div class="page-title-bg editable-alpha" data-alpha="10"><img src="images/blog/post-big_01.jpg" alt="" /></div>
+        
+        <div class="content padded">
+        
+          <!-- Top Bar -->
+          <div class="top-bar">
+            <!-- Go Back -->
+            <div class="pull-left">
+              <%= link_to tags_path, class: "btn btn-default btn-pull-up" do %>
+                <i class="icon-before fa fa-chevron-left">   Blog</i>
+              <% end %>
+                
+            </div>
+            <!-- Heading -->
+            <div class="pull-right">
+                <h6>www.tpanek.pl</h6>
+            </div>
+          </div>
+          
+          <!-- Page Title Content -->
+          <div class="padded-vertical">
+          	<span class="post-date-alt"><%= l @tag.created_at %></span>
+            <h1 class="medium"><%= @tag.title %></h1>
+            <div class="post-meta pull-left">
+                <span><i class="fa fa-tag"></i><a href="#">Webdesign</a></span>
+            </div>
+          </div>
+          
+        </div>
+          
+    </div>
+
+</div>
+<!-- Page Content / End -->
