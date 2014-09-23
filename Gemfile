@@ -18,10 +18,12 @@ gem 'figaro'
 gem 'pg'
 gem 'validates_email_format_of'
 gem 'closure_tree'
+gem 'httparty'
 
 group :development do
   gem 'rspec-rails', '~> 2.14'
   gem 'factory_girl_rails', '~> 4.2.1'
+  gem 'spring'
 end
 
 group :test do
@@ -33,11 +35,14 @@ group :test do
   gem 'simplecov', :require => false
 end
 
+group :development, :test do
+  gem 'pry'
+  gem 'pry-debugger'
+end
+
 group :production do
   gem 'rails_12factor'
   gem 'unicorn'
 end
-
-gem 'spring',        group: :development
 
 
