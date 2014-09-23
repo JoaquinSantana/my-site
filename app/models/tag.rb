@@ -16,11 +16,11 @@ class Tag < ActiveRecord::Base
   private
 
     def otaguj
-      self.title = @one_tag["title"] if @one_tag["title"]
-      self.description = @one_tag["description"] if @one_tag["description"]
-      self.body = @one_tag["body"] if @one_tag["body"]
-      self.url = @one_tag["url"] if @one_tag["url"]
-      self.source_url = @one_tag["source_url"] if @one_tag["source_url"]
+      self.title = @one_tag["title"]
+      self.description = @one_tag["description"]
+      self.body = @one_tag["body"]
+      self.url = @one_tag["url"]
+      self.source_url = @one_tag["source_url"]
       self.foto = @one_tag["embed"]["source"] if @one_tag["embed"]
       self.preview = @one_tag["embed"]["preview"] if @one_tag["embed"]
     end

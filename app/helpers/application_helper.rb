@@ -47,6 +47,11 @@ module ApplicationHelper
     end.join.html_safe
   end
 
+  def embed(link)
+    youtube_id = link.split("=").last
+    content_tag(:iframe, nil, src: "//www.youtube.com/embed/#{youtube_id}")
+  end
+
   def wrap(content)
     sanitize(raw(content.split.map{ |s| wrap_long_string(s) }.join(' ')))
   end
