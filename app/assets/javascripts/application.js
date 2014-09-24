@@ -22,6 +22,8 @@
 //= require jquery.scrollTo-1.4.3.1-min
 //= require jquery.validate.min
 //= require owl.carousel.min
+//= require bootstrap-image-gallery
+//= require jquery.blueimp-gallery.min
 //= require page-loader.min
 //= require waypoints.min
 //= require ckeditor/init

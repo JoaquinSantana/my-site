@@ -5,6 +5,8 @@
 @import 'owl.carousel.css';
 @import 'owl.theme.css';
 @import 'style.css';
+@import 'bootstrap-image-gallery.css';
+@import 'blueimp-gallery.min.css';
 @import 'colors/yellow.css';
 
 $yellow: #F8D25F;
@@ -147,4 +149,50 @@ label.checkbox {
   top: 0; left: 0;
   width: 100%;
   height: 100%;
+}
+
+#mikroblog {
+  background: url(stardust.png);
+  .thumbnail {
+    border-color: black;
+    &:hover {
+      -webkit-box-shadow: 6px 6px 6px 0px rgba(0,0,0,0.5);
+      -moz-box-shadow: 6px 6px 6px 0px rgba(0,0,0,0.5);
+      box-shadow: 6px 6px 6px 6px rgba(0,0,0,0.5);
+    } 
+  }
+
+  .mikroblog-head {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 70px;
+    padding-bottom: 20px;
+  }
+
+  .pagination {
+    position: relative;
+    padding: 0 50px;
+
+    .list-inline {
+      margin-bottom: 0px;
+    }
+    
+    .glyphicon {
+      padding: 20px 0;
+      font-size: 30px;
+    }
+
+    .glyphicon-backward {
+      top: 50%;
+      left: 25%;
+    }
+
+    .glyphicon-forward {
+      top: 50%;
+      left: 30%;
+    }
+    
+    &:hover {
+      background: none repeat scroll 0 0 rgba(0, 0, 0, 0.6);
+    }
+  }
 }
