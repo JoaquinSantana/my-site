@@ -7,14 +7,7 @@ $(document).ready(function (){
 	  };
 	});
 
-
-	$('.left carousel-control').click( function(e) {
-      e.preventDefault();
-      e.stopPropagation();
+	$('.carousel').carousel({
+	  interval: false
 	});
-
-	$('.right carousel-control').click( function(e) {
-      e.preventDefault();
-	});
-
 });

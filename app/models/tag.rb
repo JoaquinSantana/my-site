@@ -1,8 +1,11 @@
 require 'httparty'
 
 class Tag < ActiveRecord::Base
-  serialize :calytag
 	include HTTParty
+
+  validates :tagid, presence: true, uniqueness: true
+  
+  serialize :calytag
 
   def tak(tak)
     tag = tak[:title]

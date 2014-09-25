@@ -14,6 +14,7 @@
 //= require jquery_ujs
 //= require bootstrap-sprockets
 //= require custom
+//= require moje
 //= require jquery-1.10.2.min
 //= require jquery.appear
 //= require jquery.easing

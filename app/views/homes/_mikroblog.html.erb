@@ -9,21 +9,32 @@
 		<div class="carousel slide mikroblog" data-ride="carousel">
 			
 			<div class="carousel-inner">
-					<div class="row">
-						<% @tags.each_with_index do |t, index| %>
-							<% next if t.preview == nil && t.foto == nil %>
-								<div class="col-md-3 item
-															<% if index <= 4 %>
-				       								active
-				    									<% end %>
-			   	 									">
 
-									<a href="<%= t.preview %>" class="thumbnail" data-gallery>
-										<img src="<%= t.foto %>" alt="Foto">
+				<% 3.times do |n| %>
+					<div class="lists row item
+						<% if n == 0 %>
+				   				active
+				    <% end %>
+			   	 	">
+			   	 	<% case n %>
+			   	 	<% when 0 %>
+			   	 		<% @tag = @tags[0..3] %>
+			   	 	<% when 1 %>
+			   	 		<% @tag = @tags[4..7] %>
+			   	 	<% else %>
+			   	 		<% @tag = @tags[8..12] %>
+			   	 	<% end %>
+						<% @tag.each_with_index do |t, index| %>
+							
+								<div class="links col-md-3">
+
+									<a href="<%= t.foto %>" data-gallery>
+										<img src="<%= t.foto %>" alt="<%= t.id %>" class="img-rounded">
 									</a>
 								</div>
 						<% end %>
 					</div>
+				<% end %>
 
 			</div><!-- /Carousel inner -->
 			<div class="col-md-12 text-center">
@@ -47,7 +58,7 @@
 
 
 <!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
-<div id="blueimp-gallery" class="blueimp-gallery">
+<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls" data-use-bootstrap-modal="false">
     <!-- The container for the modal slides -->
     <div class="slides"></div>
     <!-- Controls for the borderless lightbox -->

@@ -153,13 +153,12 @@ label.checkbox {
 
 #mikroblog {
   background: url(stardust.png);
-  .thumbnail {
-    border-color: black;
-    &:hover {
-      -webkit-box-shadow: 6px 6px 6px 0px rgba(0,0,0,0.5);
-      -moz-box-shadow: 6px 6px 6px 0px rgba(0,0,0,0.5);
-      box-shadow: 6px 6px 6px 6px rgba(0,0,0,0.5);
-    } 
+  .col-md-3 {
+    height: 177px;
+    .img-rounded{
+      height:100%;
+      width:100%;
+    }
   }
 
   .mikroblog-head {
