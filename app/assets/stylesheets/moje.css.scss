@@ -175,7 +175,7 @@ label.checkbox {
       }
 
       img {
-        @include transition(all .8s);
+        @include transition(all 0.8s ease-in-out 0s);
         &:hover {
           @include scale(1.2);
         }

@@ -69,6 +69,7 @@ ActiveRecord::Schema.define(version: 20140925074337) do
     t.datetime "updated_at"
     t.integer  "wykoptag_id"
     t.text     "calytag"
+    t.integer  "tagid"
   end
 
   create_table "users", force: true do |t|

@@ -6,6 +6,7 @@ class Tag < ActiveRecord::Base
   validates :tagid, presence: true, uniqueness: true
   
   serialize :calytag
+  default_scope { order('created_at ASC') }
 
   def tak(tak)
     tag = tak[:title]
@@ -21,6 +22,7 @@ class Tag < ActiveRecord::Base
   private
 
     def otaguj
+      self.tagid = @one_tag["id"]
       self.calytag = @one_tag
       self.wykoptag_id = @one_tag["id"]
       self.title = @one_tag["title"]
