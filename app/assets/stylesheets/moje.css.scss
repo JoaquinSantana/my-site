@@ -153,12 +153,41 @@ label.checkbox {
 
 #mikroblog {
   background: url(stardust.png);
+  padding: 15px;
   .col-md-3 {
-    height: 177px;
-    .img-rounded{
-      height:100%;
-      width:100%;
+    .color {
+      position: absolute;
+      background: gray;
+      width: 100%;
+      height: 100%;
+      opacity: .3;
     }
+
+    .overflow {
+      height: 177px;
+      overflow: hidden;
+      position: relative;
+
+      .img-rounded{
+        height:100%;
+        width:100%;
+        border-radius: 0px;
+      }
+
+      img {
+        @include transition(all .8s);
+        &:hover {
+          @include scale(1.2);
+        }
+      }  
+
+      &:hover {
+        .color {
+          /* @include opacity(.0); */
+          visibility: hidden;
+        }
+      }
+    }     
   }
 
   .mikroblog-head {

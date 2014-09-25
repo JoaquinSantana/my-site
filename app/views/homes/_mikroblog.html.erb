@@ -27,10 +27,12 @@
 						<% @tag.each_with_index do |t, index| %>
 							
 								<div class="links col-md-3">
-
-									<a href="<%= t.foto %>" data-gallery>
-										<img src="<%= t.foto %>" alt="<%= t.id %>" class="img-rounded">
-									</a>
+									<div class="overflow">
+										<div class="color"></div>
+										<a href="<%= t.foto %>" data-gallery>
+												<img src="<%= t.foto %>" alt="<%= t.id %>" class="img-rounded">
+										</a>
+									</div>
 								</div>
 						<% end %>
 					</div>
