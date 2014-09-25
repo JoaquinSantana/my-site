@@ -4,6 +4,6 @@ class HomesController < ApplicationController
     @posts = Post.all.limit(6)
     @contact = Contact.new
 
-    @tags = Tag.all
+    @tags = Tag.all.last(12).reverse
   end
 end
