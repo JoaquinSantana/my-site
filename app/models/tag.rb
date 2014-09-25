@@ -1,6 +1,7 @@
 require 'httparty'
 
 class Tag < ActiveRecord::Base
+  serialize :calytag
 	include HTTParty
 
   def tak(tak)
@@ -9,6 +10,7 @@ class Tag < ActiveRecord::Base
     res = HTTParty.get(url, :headers => { 'apisign' => loguj(url) })
     tags = res.parsed_response['items']
     @one_tag = tags.sample
+    return if !@one_tag["embed"]
     otaguj
   end
 
@@ -16,6 +18,8 @@ class Tag < ActiveRecord::Base
   private
 
     def otaguj
+      self.calytag = @one_tag
+      self.wykoptag_id = @one_tag["id"]
       self.title = @one_tag["title"]
       self.description = @one_tag["description"]
       self.body = @one_tag["body"]

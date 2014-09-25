@@ -9,58 +9,21 @@
 		<div class="carousel slide mikroblog" data-ride="carousel">
 			
 			<div class="carousel-inner">
-				<div class="row item active">
-					<div class=" col-md-3">
-						<a href="http://dummyimage.com/350x250/ff8c00/fff" class="thumbnail" data-gallery>
-							<img src="http://dummyimage.com/350x250/ff8c00/fff" alt="...">
-						</a>
-					</div>
+					<div class="row">
+						<% @tags.each_with_index do |t, index| %>
+							<% next if t.preview == nil && t.foto == nil %>
+								<div class="col-md-3 item
+															<% if index <= 4 %>
+				       								active
+				    									<% end %>
+			   	 									">
 
-					<div class="col-md-3">
-						<a href="http://dummyimage.com/350x250/ff8c00/fff" class="thumbnail" data-gallery>
-							<img src="http://dummyimage.com/350x250/ff8c00/fff" alt="...">
-						</a>
+									<a href="<%= t.preview %>" class="thumbnail" data-gallery>
+										<img src="<%= t.foto %>" alt="Foto">
+									</a>
+								</div>
+						<% end %>
 					</div>
-
-					<div class="col-md-3">
-						<a href="http://dummyimage.com/350x250/ff8c00/fff" class="thumbnail">
-							<img src="http://dummyimage.com/350x250/ff8c00/fff" alt="...">
-						</a>
-					</div>
-
-					<div class="col-md-3">
-						<a href="http://dummyimage.com/350x250/ff8c00/fff" class="thumbnail">
-							<img src="http://dummyimage.com/350x250/ff8c00/fff" alt="...">
-						</a>
-					</div>
-				</div>
-
-				<div class="row item">
-					<div class=" col-md-3">
-						<a href="http://dummyimage.com/350x250/ff8c00/fff" class="thumbnail">
-							<img src="http://dummyimage.com/350x250/ff8c00/fff" alt="...">
-						</a>
-					</div>
-
-					<div class="col-md-3">
-						<a href="http://dummyimage.com/350x250/ff8c00/fff" class="thumbnail">
-							<img src="http://dummyimage.com/350x250/ff8c00/fff" alt="...">
-						</a>
-					</div>
-
-					<div class="col-md-3">
-						<a href="http://dummyimage.com/350x250/ff8c00/fff" class="thumbnail">
-							<img src="http://dummyimage.com/350x250/ff8c00/fff" alt="...">
-						</a>
-					</div>
-
-					<div class="col-md-3">
-						<a href="http://dummyimage.com/350x250/ff8c00/fff" class="thumbnail">
-							<img src="http://dummyimage.com/350x250/ff8c00/fff" alt="...">
-						</a>
-					</div>
-
-				</div>
 
 			</div><!-- /Carousel inner -->
 			<div class="col-md-12 text-center">

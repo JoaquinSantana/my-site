@@ -41,8 +41,18 @@
       <div class="row">
       
         <div class="col-lg-12">
+
+  <pre>
+    <%= JSON.pretty_generate(@tag.calytag) %>
+    
+  </pre>
+
+
         
           <p class="lead"><%= @tag.description %></p>
+          <p>
+            <%= @tag.wykoptag_id %>
+          </p>
           <% if @tag.body %>
             <div class="post_body">
               <%= @tag.body.html_safe %>

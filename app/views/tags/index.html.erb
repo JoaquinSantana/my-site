@@ -1,0 +1,58 @@
+<!-- Page Content -->
+<div id="page-content">
+
+		<div class="container">
+		  <div class="row">
+		    <div class="col-md-12">
+		      <h1>Lilsting tags</h1>
+
+		      <table class="table table-striped">
+		        <thead>
+		          <tr>
+		            <th>Title</th>
+		            <th>Description</th>
+		            <th>Body</th>
+		            <th>Url</th>
+		            <th colspan="3"></th>
+		          </tr>
+		        </thead>
+
+		        <tbody>
+		          <% @tags.each do |tag| %>
+		            <tr>
+		              <td><%= tag.title %></td>
+		              <td><%= tag.description %></td>
+		              <td><%= tag.body %></td>
+		              <td><%= tag.url %></td>
+		              <td><%= link_to 'Show', tag %></td>
+		            </tr>
+		          <% end %>
+		        </tbody>
+		      </table>
+
+		      <br>
+
+		      <%= link_to 'New Tag', new_tag_path %>
+		    </div>
+		  </div>
+		</div>
+
+
+
+          
+
+    
+    <!-- Bottom Bar -->
+    <div class="bottom-bar">
+    
+        <!-- Contact List -->
+        <ul class="list-inline">
+          <li><i class="inline-icon icon-before-and-after text-primary fa fa-comment"></i><a href="#">tomekkpanek@gmail.com</a></li>
+        </ul>
+     
+    </div>
+      
+  </div>
+  
+</div>
+<!-- Page Content / End -->
