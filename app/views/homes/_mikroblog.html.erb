@@ -9,35 +9,34 @@
 		<div class="carousel slide mikroblog" data-ride="carousel">
 			
 			<div class="carousel-inner">
-
-				<% 3.times do |n| %>
-					<div class="lists row item
-						<% if n == 0 %>
-				   				active
-				    <% end %>
-			   	 	">
-			   	 	<% case n %>
-			   	 	<% when 0 %>
-			   	 		<% @tag = @tags[0..3] %>
-			   	 	<% when 1 %>
-			   	 		<% @tag = @tags[4..7] %>
-			   	 	<% else %>
-			   	 		<% @tag = @tags[8..12] %>
-			   	 	<% end %>
-						<% @tag.each_with_index do |t, index| %>
-							
-								<div class="links col-md-3">
-									<div class="overflow">
-										<div class="color"></div>
-										<a href="<%= t.foto %>" data-gallery>
-												<img src="<%= t.foto %>" alt="<%= t.id %>" class="img-rounded">
-										</a>
+				<% if @tags.present? %>
+					<% 3.times do |n| %>
+						<div class="lists row item
+							<% if n == 0 %>
+					   				active
+					    <% end %>
+				   	 	">
+				   	 	<% case n %>
+				   	 	<% when 0 %>
+				   	 		<% @tag = @tags[0..3] %>
+				   	 	<% when 1 %>
+				   	 		<% @tag = @tags[4..7] %>
+				   	 	<% else %>
+				   	 		<% @tag = @tags[8..12] %>
+				   	 	<% end %>
+							<% @tag.each do |t| %>
+									<div class="links col-md-3">
+										<div class="overflow">
+											<div class="color"></div>
+											<a href="<%= t.foto %>" data-gallery>
+													<img src="<%= t.foto %>" alt="<%= t.id %>" class="img-rounded">
+											</a>
+										</div>
 									</div>
-								</div>
-						<% end %>
-					</div>
+							<% end %>
+						</div>
+					<% end %>
 				<% end %>
-
 			</div><!-- /Carousel inner -->
 			<div class="col-md-12 text-center">
 				<div class="pagination">
