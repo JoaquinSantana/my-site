@@ -12,7 +12,7 @@
 #   runner "MyModel.some_method"
 #   rake "some:great:rake:task"
 # end
-#, :at => '10:00 pm'
+#
 # every 4.days do
 #   runner "AnotherModel.prune_old_records"
 # end
@@ -21,7 +21,7 @@
 set :environment, "development"
 set :output, {:error => "log/cron_error_log.log", :standard => "log/cron_log.log"}
 
-every 1.minutes do
+every 1.day, :at => '10:00 pm' do
   rake "tags:populate"
 end
 
