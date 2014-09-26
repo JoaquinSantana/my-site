@@ -19,6 +19,8 @@ gem 'pg'
 gem 'validates_email_format_of'
 gem 'closure_tree'
 gem 'httparty'
+gem 'whenever', :require => false
+
 
 group :development do
   gem 'rspec-rails', '~> 2.14'
@@ -33,6 +35,8 @@ group :test do
   gem 'launchy', '~> 2.3.0'
   gem 'selenium-webdriver', '~> 2.39.0'
   gem 'simplecov', :require => false
+  gem 'vcr'
+  gem 'webmock'
 end
 
 group :development, :test do

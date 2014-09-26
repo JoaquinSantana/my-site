@@ -9,8 +9,21 @@ class Tag < ActiveRecord::Base
   default_scope { order('created_at ASC') }
 
   def tak(tak)
-    tag = tak[:title]
-    url = "http://a.wykop.pl/tag/index/#{tag},appkey,#{ENV["WYKOP_KEY_APP"]}"
+    begin
+      tag = tak[:title]
+      url = "http://a.wykop.pl/tag/index/#{tag},appkey,#{ENV["WYKOP_KEY_APP"]}"
+      res = HTTParty.get(url, :headers => { 'apisign' => loguj(url) })
+      tags = res.parsed_response['items']
+      @one_tag = tags.sample
+      return if !@one_tag["embed"]
+      otaguj
+    rescue
+      false
+    end 
+  end
+
+  def losowy_tag
+    url = "http://a.wykop.pl/tag/index/earthporn,appkey,#{ENV["WYKOP_KEY_APP"]}"
     res = HTTParty.get(url, :headers => { 'apisign' => loguj(url) })
     tags = res.parsed_response['items']
     @one_tag = tags.sample

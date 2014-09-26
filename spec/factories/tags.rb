@@ -2,6 +2,7 @@
 
 FactoryGirl.define do
   factory :tag do
+    sequence(:tagid, 1000)  { |n| n + 1 }
     nazwa "MyString"
     title "MyString"
     description "MyString"
