@@ -1,5 +1,4 @@
 $(document).ready(function (){
-
 	$(function() {
 	  var preview = $("#contact").data('preview');
 	  if (preview == true){
@@ -10,4 +9,5 @@ $(document).ready(function (){
 	$('.carousel').carousel({
 	  interval: false
 	});
+
 });

@@ -151,10 +151,22 @@ label.checkbox {
   height: 100%;
 }
 
+
+/**** TAGS ****/
+
 #mikroblog {
   background: url(stardust.png);
   padding: 15px;
   .col-md-3 {
+
+    span {
+      display: block;
+      width: 100%;
+      text-align: center;
+      padding: 5px;
+      font-weight: bold;
+    }
+
     .color {
       position: absolute;
       background: gray;
@@ -187,7 +199,8 @@ label.checkbox {
           visibility: hidden;
         }
       }
-    }     
+    }  
+
   }
 
   .mikroblog-head {

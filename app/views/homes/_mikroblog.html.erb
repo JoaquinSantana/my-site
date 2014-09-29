@@ -30,10 +30,12 @@
 											<div class="color"></div>
 											<% if t.foto.include? "http" %>
 												<a href="<%= t.foto %>" data-gallery>
-														<img src="<%= t.foto %>" alt="<%= t.id %>" class="img-rounded">
+														<span></span>
+														<img src="<%= t.preview %>" alt="<%= t.id %>" class="img-rounded">
 												</a>
 											<% else %>
 												<a href="<%= t.preview %>" data-gallery>
+														<span></span>
 														<img src="<%= t.preview %>" alt="<%= t.id %>" class="img-rounded">
 												</a>
 											<% end %>	
