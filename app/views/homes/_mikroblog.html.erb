@@ -31,12 +31,12 @@
 											<% if t.foto.include? "http" %>
 												<a href="<%= t.foto %>" data-gallery>
 														<span>Dodał: <%= t.author %></span>
-														<img src="<%= t.preview %>" alt="<%= t.id %>" class="img-rounded">
+														<img src="<%= t.foto %>" alt="<%= t.id %>" class="img-rounded">
 												</a>
 											<% else %>
 												<a href="<%= t.preview %>" data-gallery>
 														<span>Dodał: <%= t.author %></span>
-														<img src="<%= t.preview %>" alt="<%= t.id %>" class="img-rounded">
+														<img src="<%= t.embedurl %>" alt="<%= t.id %>" class="img-rounded">
 												</a>
 											<% end %>	
 										</div>
