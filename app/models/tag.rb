@@ -36,6 +36,7 @@ class Tag < ActiveRecord::Base
 
     def otaguj
       self.tagid = @one_tag["id"]
+      self.author = @one_tag["author"]
       self.calytag = @one_tag
       self.wykoptag_id = @one_tag["id"]
       self.title = @one_tag["title"]

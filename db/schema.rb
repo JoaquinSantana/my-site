@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140925074337) do
+ActiveRecord::Schema.define(version: 20140929121158) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -70,6 +70,7 @@ ActiveRecord::Schema.define(version: 20140925074337) do
     t.integer  "wykoptag_id"
     t.text     "calytag"
     t.integer  "tagid"
+    t.string   "author"
   end
 
   create_table "users", force: true do |t|
