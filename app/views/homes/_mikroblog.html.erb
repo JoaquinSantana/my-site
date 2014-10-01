@@ -28,17 +28,11 @@
 									<div class="links col-md-3">
 										<div class="overflow">
 											<div class="color"></div>
-											<% if t.foto.include? "http" %>
+											
 												<a href="<%= t.foto %>" data-gallery>
 														<span>Dodał: <%= t.author %></span>
-														<img src="<%= t.foto %>" alt="<%= t.id %>" class="img-rounded">
+														<img src="<%= t.foto.insert(-5, 'm') %>" alt="<%= t.id %>" class="img-rounded">
 												</a>
-											<% else %>
-												<a href="<%= t.preview %>" data-gallery>
-														<span>Dodał: <%= t.author %></span>
-														<img src="<%= t.embedurl %>" alt="<%= t.id %>" class="img-rounded">
-												</a>
-											<% end %>	
 										</div>
 									</div>
 							<% end %>

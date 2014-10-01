@@ -23,7 +23,7 @@
               <% if user_signed_in? %>
                 Hi Tomek!
                   <ul class="list-inline">
-                    <li><%= link_to "Dodaj nowy tag", new_tag_path %></li>
+                    <li><%= link_to "Dodaj nowy tag", nowezdjecie_path %></li>
                     <li>
                       <%= link_to destroy_user_session_path, method: :delete do %>
                         <i class="fa fa-sign-out"></i>

@@ -5,10 +5,6 @@ class TagsController < ApplicationController
 		@tags = Tag.all
 	end
 
-	def new
-		@tag = Tag.new
-	end
-
 	def show 
 		@tag = Tag.find(params[:id])
 	end
@@ -21,7 +17,18 @@ class TagsController < ApplicationController
 			flash[:success] = "Nowy tag został dodany"
 			redirect_to @tag
 		else
-			render :edit
+			render :back
+		end
+	end
+
+	def nowezdjecie
+		@tag = Tag.new
+		@tag.losowy_tag
+		if @tag.save
+			flash[:success] = "Nowy tag został dodany"
+			redirect_to @tag
+		else
+			redirect_to :back
 		end
 	end
 

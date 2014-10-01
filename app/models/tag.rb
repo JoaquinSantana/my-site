@@ -4,7 +4,6 @@ class Tag < ActiveRecord::Base
   include HTTParty
   default_scope { order('created_at ASC') }
 
-  validates :tagid, presence: true, uniqueness: true
   
   serialize :calytag
 
@@ -27,7 +26,7 @@ class Tag < ActiveRecord::Base
 
   def losowy_tag
     response = HTTParty.get('https://api.imgur.com/3/g/SIa9C', :headers => { 'Authorization' => "Client-ID #{ENV["IMGUR_CLIENT_ID"]}" })
-    tags = response["data"]["items"]
+    tags = response.parsed_response["data"]["items"]
     @one_tag = tags.sample
     otaguj
   end
