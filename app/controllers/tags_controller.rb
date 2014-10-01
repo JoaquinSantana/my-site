@@ -15,7 +15,7 @@ class TagsController < ApplicationController
 
 	def create
 		@tag = Tag.create(tag_params)
-		@tag.tak(tag_params)
+		@tag.losowy_tag
 
 		if @tag.save
 			flash[:success] = "Nowy tag został dodany"
