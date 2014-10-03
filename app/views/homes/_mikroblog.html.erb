@@ -29,7 +29,7 @@
 										<div class="overflow">
 											<div class="color"></div>
 											
-												<a href="<%= t.foto %>" data-gallery>
+												<a href="<%= t.foto %>" title="<%= t.try(:title) %>" data-gallery>
 														<span>Dodał: <%= t.author %></span>
 														<img src="<%= t.foto.insert(-5, 'm') %>" alt="<%= t.id %>" class="img-rounded">
 												</a>

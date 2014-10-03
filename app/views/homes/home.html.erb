@@ -16,7 +16,7 @@
   <%#= render 'projekty' %>  
     
   <!-- Contact -->
-  <% if Rails.env.production? %>
+  <% unless Rails.env.development? %>
     <%= render 'homes/kontakt' %>
   <% end %>
 </div>

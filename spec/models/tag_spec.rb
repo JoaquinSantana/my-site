@@ -1,5 +1,6 @@
 require 'spec_helper'
 
+=begin
 	describe Tag, :vcr => true do
 
 		it "nie powinien zapisać tagu bez tagid wykopu" do
@@ -21,4 +22,6 @@ require 'spec_helper'
 			tag2.tagid = tag.tagid
 			tag2.save.should be_falsy
 	end
+=end
+
 end
