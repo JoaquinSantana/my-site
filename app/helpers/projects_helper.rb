@@ -3,7 +3,7 @@ module ProjectsHelper
     case project
     when "spolisty.com"
       content_tag(:div, image_tag("spolisty.jpg", class: "laptop-content-bg"))
-    when "Tiefenbach Polska'"
+    when "Tiefenbach Polska"
       image_tag("tief-mini.jpg")
     when "Netguru workshop"
       image_tag("workshop.jpg")

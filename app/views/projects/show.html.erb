@@ -4,44 +4,113 @@
     <%= @project.name %>
   </h2>
 
-  <div class="row">
-    <div class="col-md-8">
-      <div class="laptop-bg">
-        <div class="laptop-wrapper">
-          <%= content_tag(:div, image_tag("spolisty.jpg", class: "laptop-content-bg")) %>
-          <%= content_tag(:div, image_tag("spolisty1.jpg", class: "laptop-content-bg")) %>
-          <%= content_tag(:div, image_tag("spolisty2.jpg", class: "laptop-content-bg")) %>
-          <%= content_tag(:div, image_tag("spolisty3.jpg", class: "laptop-content-bg")) %>
-        </div>
-
-        <img src="<%= asset_path('laptop.png')%>" alt="">
-      </div>
-    </div>
-    <div class="col-md-4 projekt-opis">
-      <div class="row">
-        <div class="col-md-12">
-        <h5>Technologia</h5>
-          <ul class="list-unstyled">
-            <li>Ruby on Rails</li>
-            <li>Bootstrap</li>
-            <li>RSpec</li>
-            <li>SCSS</li>
-          </ul>
-        </div>
-        <div class="col-md-12 opis">
-          <h5>Funkcjonalności</h5>
-          <%= @project.description %>
-        </div>
-        <div class="col-md-12">
-          <div class="btn btn-success btn-sm pull-left">
-            <a href="http://spolisty.com">spolisty.com</a>
+  <div class="row" style="margin-top: 50px;">
+    <% case @project.name %>
+    <% when "spolisty.com" %>
+      <div class="col-md-8">
+        <div class="laptop-bg">
+          <div class="laptop-wrapper">
+            <%= content_tag(:div, image_tag("spolisty.jpg", class: "laptop-content-bg")) %>
+            <%= content_tag(:div, image_tag("spolisty1.jpg", class: "laptop-content-bg")) %>
+            <%= content_tag(:div, image_tag("spolisty2.jpg", class: "laptop-content-bg")) %>
+            <%= content_tag(:div, image_tag("spolisty3.jpg", class: "laptop-content-bg")) %>
           </div>
-            <%= link_to 'Wstecz', root_path, class: 'btn btn-success btn-sm' %>
-        </div>        
+
+          <img src="<%= asset_path('laptop.png')%>" alt="">
+        </div>
       </div>
-      
-    </div>
+      <div class="col-md-4 projekt-opis">
+        <div class="row">
+          <div class="col-md-12">
+          <h5>Technologia</h5>
+            <ul class="list-unstyled">
+              <li>Ruby on Rails</li>
+              <li>Bootstrap</li>
+              <li>RSpec</li>
+              <li>SCSS</li>
+            </ul>
+          </div>
+          <div class="col-md-12 opis">
+            <h5>Funkcjonalności</h5>
+            <%= @project.description %>
+          </div>
+          <div class="col-md-12">
+            <div class="btn btn-info btn-sm pull-left">
+              <a href="http://spolisty.com">spolisty.com</a>
+            </div>
+              <%= link_to 'Wstecz', root_path, class: 'btn btn-info btn-sm' %>
+          </div>        
+        </div>
+      </div>
+    <% when "Tiefenbach Polska" %>
+      <div class="col-md-8">
+        <div class="laptop-bg">
+          <div class="laptop-wrapper">
+            <%= content_tag(:div, image_tag("tief-mini.jpg", class: "laptop-content-bg")) %>
+            <%= content_tag(:div, image_tag("tief-mini1.jpg", class: "laptop-content-bg")) %>
+            <%= content_tag(:div, image_tag("tief-mini2.jpg", class: "laptop-content-bg")) %>
+            <%= content_tag(:div, image_tag("tief-mini3.jpg", class: "laptop-content-bg")) %>
+          </div>
+
+          <img src="<%= asset_path('laptop.png')%>" alt="">
+        </div>
+      </div>
+      <div class="col-md-4 projekt-opis">
+        <div class="row">
+          <div class="col-md-12">
+          <h5>Technologia</h5>
+            <ul class="list-unstyled">
+              <li>Bootstrap</li>
+              <li>Google Map API</li>
+              <li>LESS</li>
+            </ul>
+          </div>
+          <div class="col-md-12 opis">
+            <h5>Funkcjonalności</h5>
+            <%= @project.description %>
+          </div>
+          <div class="col-md-12">
+            <div class="btn btn-info btn-sm pull-left">
+              <a href="http://www.tiefenbach.com.pl">Odwiedź stronę</a>
+            </div>
+              <%= link_to 'Wstecz', root_path, class: 'btn btn-info btn-sm' %>
+          </div>        
+        </div>
+      </div>
+    <% when "Netguru workshop" %>
+      <div class="col-md-8">
+        <div class="laptop-bg">
+          <div class="laptop-wrapper">
+            <%= content_tag(:div, image_tag("workshop.jpg", class: "laptop-content-bg")) %>
+            <%= content_tag(:div, image_tag("workshop1.jpg", class: "laptop-content-bg")) %>
+            <%= content_tag(:div, image_tag("workshop2.jpg", class: "laptop-content-bg")) %>
+            <%= content_tag(:div, image_tag("workshop3.jpg", class: "laptop-content-bg")) %>
+          </div>
+
+          <img src="<%= asset_path('laptop.png')%>" alt="">
+        </div>
+      </div>
+      <div class="col-md-4 projekt-opis">
+        <div class="row">
+          <div class="col-md-12">
+          <h5>Technologia</h5>
+            <ul class="list-unstyled">
+              <li>Ruby on Rails</li>
+              <li>Bootstrap</li>
+            </ul>
+          </div>
+          <div class="col-md-12 opis">
+            <h5>Funkcjonalności</h5>
+            <%= @project.description %>
+          </div>
+          <div class="col-md-12">
+            <div class="btn btn-info btn-sm pull-left">
+              <a href="https://tpanek-workshops-gliwice.herokuapp.com/">Odwiedź stronę</a>
+            </div>
+              <%= link_to 'Wstecz', root_path, class: 'btn btn-info btn-sm' %>
+          </div>        
+        </div>
+      </div>
+    <% end %>
   </div>
-    
-  
 </div>
