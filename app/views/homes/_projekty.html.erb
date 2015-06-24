@@ -11,7 +11,9 @@
           <div class="project-info">
             <div class="project-title">spolisty.com</div>
             <div class="project-caption text-blue">Ruby on Rails</div>
-            <div class="project-buttons"><a href="projects/ajax-project-details.html" class="ajax-portfolio-link btn btn-blue btn-sm">Czytaj więcej</a> <a href="http://spolisty.com" target="_blank" class="btn btn-default btn-sm">Wersja online</a></div>
+            <div class="project-buttons">
+            <%= link_to "Zobacz", project_path(Project.find(1)), class: "btn btn-blue btn-sm" %>
+            <a href="http://spolisty.com" target="_blank" class="btn btn-default btn-sm">Wersja online</a></div>
           </div>
         </div>
       </div>
@@ -24,7 +26,9 @@
           <div class="project-info">
             <div class="project-title">Tiefenbach Polska</div>
             <div class="project-caption text-yellow">Front-end, Bootstrap</div>
-            <div class="project-buttons"><a href="projects/ajax-project-details.html" class="ajax-portfolio-link btn btn-yellow btn-sm">Czytaj więcej</a> <a href="www.tiefenbach.com.pl" target="_blank" class="btn btn-default btn-sm">Wersja online</a></div>
+            <div class="project-buttons">            
+              <%= link_to "Zobacz", project_path(Project.find(2)), class: "btn btn-blue btn-sm" %> 
+              <a href="www.tiefenbach.com.pl" target="_blank" class="btn btn-default btn-sm">Wersja online</a></div>
           </div>
         </div>
       </div>
@@ -37,7 +41,9 @@
           <div class="project-info">
             <div class="project-title">Netguru workshop</div>
             <div class="project-caption text-green">Ruby on Rails / Bootstrap</div>
-            <div class="project-buttons"><a href="projects/ajax-project-details.html" class="ajax-portfolio-link btn btn-green btn-sm">Czytaj więcej</a> <a href="https://tpanek-workshops-gliwice.herokuapp.com/" target="_blank" class="btn btn-default btn-sm">Wersja online</a></div>
+            <div class="project-buttons">
+              <%= link_to "Zobacz", project_path(Project.find(3)), class: "btn btn-blue btn-sm" %> 
+             <a href="https://tpanek-workshops-gliwice.herokuapp.com/" target="_blank" class="btn btn-default btn-sm">Wersja online</a></div>
           </div>
         </div>
       </div>
@@ -50,7 +56,9 @@
           <div class="project-info">
             <div class="project-title">Make it</div>
             <div class="project-caption text-red">Ruby on Rails / React</div>
-            <div class="project-buttons"><a href="projects/ajax-project-details.html" class="ajax-portfolio-link btn btn-red btn-sm">Czytaj więcej</a> <a href="#" target="_blank" class="btn btn-default btn-sm">Wersja online</a></div>
+            <div class="project-buttons">
+              <%= link_to "Zobacz", project_path(Project.find(4)), class: "btn btn-blue btn-sm" %>
+              <a href="#" target="_blank" class="btn btn-default btn-sm">Wersja online</a></div>
           </div>
         </div>
       </div>

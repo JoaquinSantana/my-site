@@ -1,29 +1,47 @@
-<p id="notice"><%= notice %></p>
+<div id="page-content">
+        
+  <h2 class="page-header text-center">
+    <%= @project.name %>
+  </h2>
 
-<p>
-  <strong>Name:</strong>
-  <%= @project.name %>
-</p>
+  <div class="row">
+    <div class="col-md-8">
+      <div class="laptop-bg">
+        <div class="laptop-wrapper">
+          <%= content_tag(:div, image_tag("spolisty.jpg", class: "laptop-content-bg")) %>
+          <%= content_tag(:div, image_tag("spolisty1.jpg", class: "laptop-content-bg")) %>
+          <%= content_tag(:div, image_tag("spolisty2.jpg", class: "laptop-content-bg")) %>
+          <%= content_tag(:div, image_tag("spolisty3.jpg", class: "laptop-content-bg")) %>
+        </div>
 
-<p>
-  <strong>Short desc:</strong>
-  <%= @project.short_desc %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @project.description %>
-</p>
-
-<p>
-  <strong>Site:</strong>
-  <%= @project.site %>
-</p>
-
-<p>
-  <strong>Foto:</strong>
-  <%= @project.foto %>
-</p>
-
-<%= link_to 'Edit', edit_project_path(@project) %> |
-<%= link_to 'Back', projects_path %>
+        <img src="<%= asset_path('laptop.png')%>" alt="">
+      </div>
+    </div>
+    <div class="col-md-4 projekt-opis">
+      <div class="row">
+        <div class="col-md-12">
+        <h5>Technologia</h5>
+          <ul class="list-unstyled">
+            <li>Ruby on Rails</li>
+            <li>Bootstrap</li>
+            <li>RSpec</li>
+            <li>SCSS</li>
+          </ul>
+        </div>
+        <div class="col-md-12 opis">
+          <h5>Funkcjonalności</h5>
+          <%= @project.description %>
+        </div>
+        <div class="col-md-12">
+          <div class="btn btn-success btn-sm pull-left">
+            <a href="http://spolisty.com">spolisty.com</a>
+          </div>
+            <%= link_to 'Wstecz', root_path, class: 'btn btn-success btn-sm' %>
+        </div>        
+      </div>
+      
+    </div>
+  </div>
+    
+  
+</div>

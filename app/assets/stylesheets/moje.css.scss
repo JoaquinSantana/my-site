@@ -242,3 +242,58 @@ label.checkbox {
     }
   }
 }
+
+
+.laptop-bg {
+  text-align: center;
+  background-size: contain;
+  background-clip: border-box;
+  position:relative;
+  background-position: center center;
+  background-repeat: no-repeat;
+  
+  .laptop-wrapper {
+    background-repeat: no-repeat;
+    position: absolute;
+     /* % to outer border */
+    left:16.1%;
+    top: 16.1%;
+    bottom: 22%;
+    right: 18.5%;
+    width: 67.8%;
+    margin-bottom: 0 !important;
+ }
+}
+
+.slick-list {
+    max-height: 100% !important;
+}
+
+.slick-prev.slick-next {
+  display:none;
+}
+
+.projekt-opis {
+  text-align: left;
+  padding-top: 73px;
+  padding-right: 45px;
+
+  .list-unstyled {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+
+  .opis {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+
+  .btn {
+    margin-right: 20px;
+  }
+}
+

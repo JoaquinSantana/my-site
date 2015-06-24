@@ -1,8 +1,18 @@
 $(document).ready(function (){
   
 	"use strict";
-	
+  $('.laptop-wrapper').slick({
+	  infinite: true,
+	  speed: 550,
+	  fade: true,
+	  cssEase: 'linear',
+  	autoplay: true,
+  	autoplaySpeed: 3000,
+  	fade: true,
+  	cssEase: 'linear'
+	});
 	/* Setting Sizes 
+
 	-----------------------------------------------------*/
 	
 	function setSizes() {

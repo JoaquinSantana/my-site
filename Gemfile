@@ -20,6 +20,7 @@ gem 'validates_email_format_of'
 gem 'closure_tree'
 gem 'httparty'
 gem 'whenever', :require => false
+gem "jquery-slick-rails"
 
 
 group :development do

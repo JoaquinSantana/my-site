@@ -28,4 +28,5 @@
 //= require page-loader.min
 //= require waypoints.min
 //= require ckeditor/init
+//= require jquery.slick
 //= require_tree .
