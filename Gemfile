@@ -20,8 +20,11 @@ gem 'validates_email_format_of'
 gem 'closure_tree'
 gem 'httparty'
 gem 'whenever', :require => false
-gem "jquery-slick-rails"
-
+gem 'jquery-slick-rails'
+gem 'capistrano', '~> 3.1.0'
+gem 'capistrano-bundler', '~> 1.1.2'
+gem 'capistrano-rails', '~> 1.1.1'
+gem 'capistrano-rvm', github: "capistrano/rvm"
 
 group :development do
   gem 'rspec-rails', '~> 2.14'
@@ -44,10 +47,4 @@ group :development, :test do
   gem 'pry'
   gem 'pry-byebug'
 end
-
-group :production do
-  gem 'rails_12factor'
-  gem 'unicorn'
-end
-
 
